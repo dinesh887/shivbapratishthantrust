@@ -106,16 +106,12 @@ export const content: BilingualContent = {
         "secondaryHref": "#join",
         "details": [
           {
-            "label": "तारीख",
-            "value": "[तारीख]"
-          },
-          {
-            "label": "ठिकाण",
-            "value": "[ठिकाण]"
+            "label": "अंतिम तारीख",
+            "value": "२१ नोव्हेंबर २०२६"
           },
           {
             "label": "शुल्क",
-            "value": "[शुल्क]"
+            "value": "विनामूल्य"
           }
         ]
       },
@@ -752,7 +748,7 @@ export const content: BilingualContent = {
         "details": [
           {
             "label": "Date",
-            "value": "[Date]"
+            "value": "Last date: 21 November 2026"
           },
           {
             "label": "Location",
@@ -760,7 +756,7 @@ export const content: BilingualContent = {
           },
           {
             "label": "Fee",
-            "value": "[Fee]"
+            "value": "Free of cost"
           }
         ]
       },
