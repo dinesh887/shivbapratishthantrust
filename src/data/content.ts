@@ -83,9 +83,11 @@ export const content: BilingualContent = {
         "address": {
           "label": "पत्ता",
           "lines": [
-            "शिवबा प्रतिष्ठान ट्रस्ट ऑफिस, विघ्नेश्वर 2 बी,",
-            "छत्रपती संभाजी महाराज नगर, डी मार्ट समोर,",
-            "कोलडोंगरी, सहार रोड, अंधेरी पूर्व, मुंबई ६९"
+            "शिवबा प्रतिष्ठान ट्रस्ट ऑफिस,",
+            "विघ्नेश्वर 2 बी,",
+            "छत्रपती संभाजी महाराज नगर,",
+            "डी मार्ट समोर, कोलडोंगरी,",
+            "सहार रोड, अंधेरी पूर्व, मुंबई ६९"
           ]
         },
         "social": {
@@ -612,8 +614,8 @@ export const content: BilingualContent = {
           "answers": [
             "ही स्पर्धा ऑनलाईन पद्धतीत होणार आहे.",
             "गड किल्ला हा २०२६ सालाचा असावा.",
-            "किल्ल्याच्या माहिती बरोबर 2 मिनिटांचा चित्रफीत (video) पाठवावा.",
-            "किल्ल्याचे 2 ते 3 छायाचित्र (फोटो) पाठवावेत.",
+            "प्रत्येक सहभागीने किल्ल्याच्या माहितीसह जास्तीत जास्त 2 मिनिटांचा आणि 1 GB पेक्षा मोठा नसलेला एक व्हिडिओ पाठवणे अनिवार्य आहे.",
+            "किल्ल्याची चार वेगवेगळ्या कोनांतून घेतलेली छायाचित्रे (फोटो) पाठवावीत.",
             "स्पर्धकांना गुगल फॉर्म भरणे अनिवार्य आहे.",
             "चित्रफिती मध्ये किल्ल्याची माहिती असल्यास प्राधान्य.",
             "सादर किल्ल्याचा चित्रफीत (video) शिवबा प्रतिष्ठान ट्रस्टच्या इन्स्टाग्राम प्रोफाइल ला कोलॅबरेट करावे.",
@@ -638,8 +640,8 @@ export const content: BilingualContent = {
         {
           "question": "फोटो / व्हिडिओ सबमिशन",
           "answers": [
-            "पूर्ण झालेल्या गडाचे फोटो २१ नोव्हेंबर २०२६ पर्यंत सादर करणे आवश्यक आहे.",
-            "फोटो व व्हिडिओ एकाच Google Drive फोल्डरमध्ये ठेवावेत.",
+            "किल्ल्याची चार वेगवेगळ्या कोनांतून घेतलेली छायाचित्रे आणि 1 GB पेक्षा मोठा नसलेला एक व्हिडिओ २१ नोव्हेंबर २०२६ पर्यंत सादर करणे आवश्यक आहे.",
+            "व्हिडिओचा कालावधी जास्तीत जास्त 2 मिनिटे असावा. फोटो व व्हिडिओ एकाच Google Drive फोल्डरमध्ये ठेवावेत.",
             "फोल्डरची परवानगी 'Anyone with the link can view' अशी ठेवावी."
           ]
         },
@@ -666,9 +668,9 @@ export const content: BilingualContent = {
           ]
         },
         {
-          "question": "फोटो आणि व्हिडिओच्या लिंक कशा द्याव्यात?",
+          "question": "फोटो आणि व्हिडिओ कसे असावेत आणि त्यांची लिंक कशी द्यावी?",
           "answers": [
-            "सर्व फोटो व व्हिडिओ एकाच फोल्डरमध्ये ठेवा आणि त्या फोल्डरची एकच लिंक नोंदणी फॉर्ममध्ये टाका."
+            "किल्ल्याचा जास्तीत जास्त 2 मिनिटांचा आणि 1 GB पेक्षा मोठा नसलेला एक व्हिडिओ तसेच चार वेगवेगळ्या कोनांतून घेतलेली छायाचित्रे एकाच फोल्डरमध्ये ठेवा. त्या फोल्डरची एकच लिंक नोंदणी फॉर्ममध्ये टाका."
           ]
         },
         {
@@ -894,9 +896,11 @@ export const content: BilingualContent = {
         "address": {
           "label": "Address",
           "lines": [
-            "Shivba Pratishthan Trust Office, Vighneshwar 2B,",
-            "Chhatrapati Sambhaji Maharaj Nagar, opposite D Mart,",
-            "Koladongri, Sahar Road, Andheri East, Mumbai 69"
+            "Shivba Pratishthan Trust Office,",
+            "Vighneshwar 2B,",
+            "Chhatrapati Sambhaji Maharaj Nagar,",
+            "opposite D Mart, Koladongri,",
+            "Sahar Road, Andheri East, Mumbai 69"
           ]
         },
         "social": {
@@ -1427,8 +1431,8 @@ export const content: BilingualContent = {
           "answers": [
             "This competition will be conducted online.",
             "The fort should be from the year 2026.",
-            "Submit a 2-minute video along with information about the fort.",
-            "Submit 2 to 3 photographs of the fort.",
+            "Each participant must submit one video about the fort, no longer than 2 minutes and no larger than 1 GB, along with information about the fort.",
+            "Submit four photographs of the fort, each taken from a different angle.",
             "Participants must fill out the Google Form.",
             "Preference will be given to videos that include information about the fort.",
             "The submitted fort video should be posted as a collaboration with Shivba Pratishthan Trust’s Instagram profile.",
@@ -1453,8 +1457,8 @@ export const content: BilingualContent = {
         {
           "question": "Photo / video submission",
           "answers": [
-            "Photos of the completed fort must be submitted by 21 November 2026.",
-            "Keep all photos and videos in one Google Drive folder.",
+            "Submit four photographs of the fort, each taken from a different angle, and one video no larger than 1 GB by 21 November 2026.",
+            "The video must be no longer than 2 minutes. Keep the photos and video in one Google Drive folder.",
             "Set the folder access to “Anyone with the link can view.”"
           ]
         },
@@ -1481,9 +1485,9 @@ export const content: BilingualContent = {
           ]
         },
         {
-          "question": "How should I share the photo and video links?",
+          "question": "What should the photos and video include, and how should I share them?",
           "answers": [
-            "Put all photos and videos in one folder and enter that folder’s single link in the registration form."
+            "Put one video about the fort, with a maximum duration of 2 minutes and a maximum file size of 1 GB, and four photos taken from different angles in one folder. Enter that folder’s single link in the registration form."
           ]
         },
         {

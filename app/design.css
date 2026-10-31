@@ -111,7 +111,7 @@ input,select{width:100%;box-sizing:border-box;padding:12px;border:1px solid #A88
 .fq summary{font-family:'Noto Sans Devanagari','Mukta',sans-serif;list-style:none;cursor:pointer;display:flex;align-items:center;gap:14px;padding:14px 20px;min-height:48px;font-weight:600;font-size:17px;color:#FBF3E4;border-radius:10px}
 .fq summary::-webkit-details-marker{display:none}
 .fq summary::after{content:"+";margin-left:auto;font-size:24px;font-weight:400;color:#FFD21F;line-height:1}
-.fq details[open] summary::after{content:"âˆ’"}
+.fq details[open] summary::after{content:"";display:block;width:14px;height:2px;flex-shrink:0;border-radius:2px;background:#FFD21F}
 .fq summary:focus-visible{outline:3px solid #FFD21F;outline-offset:2px}
 .fa{padding:0 20px 18px;font-size:16px;line-height:1.75;color:#E8D5B0}.fa p{margin:0}
 .cta{position:relative;padding:110px 0;color:#FBF3E4;background:linear-gradient(90deg,rgba(37,10,11,.82) 0,rgba(37,10,11,.45) 38%,rgba(37,10,11,0) 65%),url("/images/cta-background.jpg") right center/cover no-repeat #250a0b}
