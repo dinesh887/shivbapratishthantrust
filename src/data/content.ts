@@ -316,17 +316,13 @@ export const content: BilingualContent = {
         "eyebrow": "गॅलरी",
         "title": "शिवबा प्रतिष्ठान ट्रस्ट (रजि) – छायाचित्र संग्रह",
         "subtitle": "सामाजिक कार्य, विविध उपक्रम आणि कार्यक्रमांच्या आठवणींना उजाळा देणारा छायाचित्र संग्रह.",
-        "categories": [{"id":"all","label":"सर्व"},{"id":"forts","label":"गडकोट"},{"id":"social","label":"सामाजिक कार्यक्रम"}],
+        "categories": [{"id":"all","label":"सर्व"},{"id":"forts","label":"गडकोट"},{"id":"social","label":"सामाजिक कार्यक्रम"},{"id":"warfare","label":"शिवकालीन युद्धकला"}],
         "noResults": "या विभागात सध्या छायाचित्रे उपलब्ध नाहीत.",
         "showMore": "आणखी फोटो पहा",
         "closePreview": "प्रतिमा पूर्वदृश्य बंद करा",
         "previousImage": "मागील प्रतिमा",
         "nextImage": "पुढील प्रतिमा",
-        "items": [          {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%AF%20%E0%A4%85%E0%A4%B8%E0%A5%87%20%E0%A4%B6%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%A6%E0%A4%BE%E0%A4%A4%E0%A4%BE....%20(2).jpg",
-            "alt": "शिवजयंती कार्यक्रमातील रंगमंचावरील सादरीकरण",
-            "category": "social"
-          },
+        "items": [
           {
             "src": "/gallery/shiv-jayanti-greetings.jpg",
             "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)च्या शिवजयंती शुभेच्छा आणि सत्कार समारंभाचे पोस्टर",
@@ -398,11 +394,6 @@ export const content: BilingualContent = {
             "category": "social"
           },
           {
-            "src": "/gallery/volleyball-shirt-distribution-02.jpg",
-            "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)तर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
-            "category": "social"
-          },
-          {
             "src": "/gallery/volleyball-shirt-distribution-01.jpg",
             "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)तर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
@@ -457,6 +448,76 @@ export const content: BilingualContent = {
             "src": "/gallery/raigad-new-year-honors-03.jpg",
             "alt": "रायगडावरील पुरस्कार वितरण सोहळा",
             "category": "social"
+          },
+          {
+            "src": "/gallery/fight-1.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 1",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-2.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 2",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-3.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 3",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-4.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 4",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-5.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 5",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-6.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 6",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-7.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 7",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-8.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 8",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-9.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 9",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-10.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 10",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-11.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 11",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-12.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 12",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-13.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 13",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-14.jpeg",
+            "alt": "शिवकालीन युद्धकलेचे प्रात्यक्षिक 14",
+            "category": "warfare"
           }
         ]
       },
@@ -1133,7 +1194,7 @@ export const content: BilingualContent = {
         "eyebrow": "Gallery",
         "title": "Shivba Pratishthan Trust (Reg.) – Photo Gallery",
         "subtitle": "A photo collection celebrating social work, activities, and events.",
-        "categories": [{"id":"all","label":"All"},{"id":"forts","label":"Forts"},{"id":"social","label":"Social Programs"}],
+        "categories": [{"id":"all","label":"All"},{"id":"forts","label":"Forts"},{"id":"social","label":"Social Programs"},{"id":"warfare","label":"Shivkalin Warfare"}],
         "noResults": "No photos are currently available in this category.",
         "showMore": "See more photos",
         "closePreview": "Close image preview",
@@ -1215,11 +1276,6 @@ export const content: BilingualContent = {
             "category": "social"
           },
           {
-            "src": "/gallery/volleyball-shirt-distribution-02.jpg",
-            "alt": "Shivba Pratishthan Trust (Reg.) distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
-            "category": "social"
-          },
-          {
             "src": "/gallery/volleyball-shirt-distribution-01.jpg",
             "alt": "Shivba Pratishthan Trust (Reg.) distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
@@ -1274,6 +1330,76 @@ export const content: BilingualContent = {
             "src": "/gallery/raigad-new-year-honors-03.jpg",
             "alt": "Awards ceremony at Raigad Fort.",
             "category": "social"
+          },
+          {
+            "src": "/gallery/fight-1.jpeg",
+            "alt": "Shivkalin warfare demonstration 1",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-2.jpeg",
+            "alt": "Shivkalin warfare demonstration 2",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-3.jpeg",
+            "alt": "Shivkalin warfare demonstration 3",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-4.jpeg",
+            "alt": "Shivkalin warfare demonstration 4",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-5.jpeg",
+            "alt": "Shivkalin warfare demonstration 5",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-6.jpeg",
+            "alt": "Shivkalin warfare demonstration 6",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-7.jpeg",
+            "alt": "Shivkalin warfare demonstration 7",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-8.jpeg",
+            "alt": "Shivkalin warfare demonstration 8",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-9.jpeg",
+            "alt": "Shivkalin warfare demonstration 9",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-10.jpeg",
+            "alt": "Shivkalin warfare demonstration 10",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-11.jpeg",
+            "alt": "Shivkalin warfare demonstration 11",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-12.jpeg",
+            "alt": "Shivkalin warfare demonstration 12",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-13.jpeg",
+            "alt": "Shivkalin warfare demonstration 13",
+            "category": "warfare"
+          },
+          {
+            "src": "/gallery/fight-14.jpeg",
+            "alt": "Shivkalin warfare demonstration 14",
+            "category": "warfare"
           }
         ]
       },

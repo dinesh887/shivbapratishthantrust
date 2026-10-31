@@ -13,8 +13,23 @@ export default function GallerySection() {
   const isLightboxOpen = selectedIndex !== null;
   const closeButtonRef = useRef<HTMLButtonElement>(null);
   const activeTriggerRef = useRef<HTMLButtonElement | null>(null);
+  const categoryIds = gallery.categories.filter((category) => category.id !== "all").map((category) => category.id);
+  for (const item of gallery.items) {
+    if (!categoryIds.includes(item.category)) categoryIds.push(item.category);
+  }
+  const itemsByCategory = new Map(categoryIds.map((categoryId) => [
+    categoryId,
+    gallery.items.filter((item) => item.category === categoryId),
+  ]));
+  const mixedItems = [];
+  const maxCategoryCount = Math.max(0, ...Array.from(itemsByCategory.values(), (items) => items.length));
+  for (let itemIndex = 0; itemIndex < maxCategoryCount; itemIndex++) {
+    for (const items of itemsByCategory.values()) {
+      if (items[itemIndex]) mixedItems.push(items[itemIndex]);
+    }
+  }
   const visibleItems = activeCategory === "all"
-    ? gallery.items
+    ? mixedItems
     : gallery.items.filter((item) => item.category === activeCategory);
   const displayedItems = visibleItems.slice(0, visibleCount);
 
