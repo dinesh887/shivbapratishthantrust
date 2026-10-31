@@ -50,21 +50,35 @@ export default function Footer({ className }: FooterProps) {
         </div>
       </div>
       <div className="w" style={{ marginTop: 24 }}>
-        <a
-          href={footer.social.instagram.href}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={footer.social.instagram.label}
-          title={footer.social.instagram.label}
-          style={{ display: "inline-flex", alignItems: "center", gap: 9, color: "inherit" }}
-        >
-          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
-            <rect x="3" y="3" width="18" height="18" rx="5" />
-            <circle cx="12" cy="12" r="4" />
-            <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
-          </svg>
-          <span>{footer.social.instagram.label}</span>
-        </a>
+        <b style={{ display: "block", marginBottom: 12, color: "#FFD21F" }}>आम्हाला फॉलो करा</b>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: 16 }}>
+          <a
+            href={footer.social.instagram.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={footer.social.instagram.label}
+            title={footer.social.instagram.label}
+            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, color: "inherit" }}
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+              <rect x="3" y="3" width="18" height="18" rx="5" />
+              <circle cx="12" cy="12" r="4" />
+              <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
+            </svg>
+          </a>
+          <a
+            href={footer.social.facebook.href}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={footer.social.facebook.label}
+            title={footer.social.facebook.label}
+            style={{ display: "inline-flex", alignItems: "center", justifyContent: "center", width: 40, height: 40, color: "inherit" }}
+          >
+            <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="currentColor">
+              <path d="M13.5 21v-8h2.7l.4-3.1h-3.1v-2c0-.9.3-1.6 1.6-1.6h1.7V3.5c-.3 0-1.3-.1-2.5-.1-2.5 0-4.2 1.5-4.2 4.3v2.2H7.3V13h2.8v8z" />
+            </svg>
+          </a>
+        </div>
       </div>
       <p className="w" style={{ marginTop: 32, fontSize: 14, opacity: 0.8 }}>{footer.copyright}</p>
     </footer>

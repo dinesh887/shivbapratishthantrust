@@ -15,7 +15,7 @@ export interface SectionContent {
 }
 export interface WebsiteLanguageContent {
  site:{title:string;description:string;favicon:string};
- layout:{header:{logo:ImageContent & {width:number;height:number};brand:string;navLabel:string;navigation:{href:string;label:string}[];action:{href:string;label:string}};footer:{logo:ImageContent & {width:number;height:number};brand:string;description:string[];contact:{label:string;lines:string[]};address:{label:string;lines:string[]};social:{instagram:{href:string;label:string}};copyright:string}};
+ layout:{header:{logo:ImageContent & {width:number;height:number};brand:string;navLabel:string;navigation:{href:string;label:string}[];action:{href:string;label:string}};footer:{logo:ImageContent & {width:number;height:number};brand:string;description:string[];contact:{label:string;lines:string[]};address:{label:string;lines:string[]};social:{instagram:{href:string;label:string};facebook:{href:string;label:string}};copyright:string}};
  sections:SectionContent; accordions:{rules:AccordionContent[];faq:AccordionContent[]}; certificatePreview:Record<string,string>; messages:Record<string,string>; validationErrors:Record<string,string[]>; validationOptions:{districts:string[]}; languageSwitcher:{label:string;marathi:string;english:string};
 }
 export interface BilingualContent { mr:WebsiteLanguageContent; en:WebsiteLanguageContent }
@@ -94,7 +94,8 @@ export const content: BilingualContent = {
           "instagram": {
             "href": "https://www.instagram.com/__shivbapratishthantrust/",
             "label": "इन्स्टाग्रामवर आम्हाला फॉलो करा"
-          }
+          },
+          "facebook": {"href":"https://www.facebook.com/share/1C8YYvThG7/?mibextid=wwXIfr","label":"फेसबुकवर आम्हाला फॉलो करा"}
         },
         "copyright": "© २०२६ शिवबा प्रतिष्ठान ट्रस्ट (रजि)"
       }
@@ -107,7 +108,7 @@ export const content: BilingualContent = {
           "src": "/images/shivba-wordmark.png",
           "alt": "जगातील पहिली आंतरराष्ट्रीय गड किल्ले बांधणी स्पर्धा 2026"
         },
-        "description": "दिवाळीच्या मातीतून उभे राहणारे आपले गड-किल्ले. आपल्या इतिहासाला हातांनी आकार द्या.",
+        "description": "सह्याद्रीच्या मातीतून उभे राहणारे आपले गड-किल्ले. आपल्या इतिहासाला हातांनी आकार द्या.",
         "primaryButton": "आत्ताच नोंदणी करा",
         "primaryHref": "#register",
         "secondaryButton": "सहभाग कसा घ्यावा",
@@ -968,7 +969,8 @@ export const content: BilingualContent = {
           "instagram": {
             "href": "https://www.instagram.com/__shivbapratishthantrust/",
             "label": "Follow us on Instagram"
-          }
+          },
+          "facebook": {"href":"https://www.facebook.com/share/1C8YYvThG7/?mibextid=wwXIfr","label":"Follow us on Facebook"}
         },
         "copyright": "© 2026 Shivba Pratishthan Trust (Reg.)"
       }
@@ -981,7 +983,7 @@ export const content: BilingualContent = {
           "src": "/images/shivba-wordmark.png",
           "alt": "The world’s first international fort-building competition 2026"
         },
-        "description": "Build your forts from the soil of Diwali. Give shape to our history with your own hands.",
+        "description": "Build your forts from the soil of the Sahyadris. Give shape to our history with your own hands.",
         "primaryButton": "Register now",
         "primaryHref": "#register",
         "secondaryButton": "How to participate",
