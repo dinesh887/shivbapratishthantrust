@@ -139,6 +139,11 @@ export default function SiteInteractions({ children }) {
         else input.removeAttribute("aria-invalid");
       });
     });
+    const districtControl = container.querySelector("#rd-control");
+    if (districtControl) {
+      if (formErrors.district) districtControl.setAttribute("aria-invalid", "true");
+      else districtControl.removeAttribute("aria-invalid");
+    }
 
     const status = container.querySelector("#registration-status");
     if (status) {
@@ -323,7 +328,10 @@ export default function SiteInteractions({ children }) {
     if (!valid) {
       setSubmission({ status: "error", message: invalidFormMessage });
       const firstInvalidField = Object.keys(errors)[0];
-      form.querySelector(`[name="${FORM_NAMES[firstInvalidField] || firstInvalidField}"]`)?.focus();
+      const firstInvalidControl = firstInvalidField === "district"
+        ? form.querySelector("#rd-control")
+        : form.querySelector(`[name="${FORM_NAMES[firstInvalidField] || firstInvalidField}"]`);
+      firstInvalidControl?.focus();
       return;
     }
 

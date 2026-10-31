@@ -28,6 +28,23 @@ export default function Footer({ className }: FooterProps) {
           <p style={{ margin: "8px 0 0", lineHeight: 1.7 }}>{lines(footer.address.lines)}</p>
         </div>
       </div>
+      <div className="w" style={{ marginTop: 24 }}>
+        <a
+          href={footer.social.instagram.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label={footer.social.instagram.label}
+          title={footer.social.instagram.label}
+          style={{ display: "inline-flex", alignItems: "center", gap: 9, color: "inherit" }}
+        >
+          <svg aria-hidden="true" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+            <rect x="3" y="3" width="18" height="18" rx="5" />
+            <circle cx="12" cy="12" r="4" />
+            <circle cx="17.5" cy="6.5" r=".8" fill="currentColor" stroke="none" />
+          </svg>
+          <span>{footer.social.instagram.label}</span>
+        </a>
+      </div>
       <p className="w" style={{ marginTop: 32, fontSize: 14, opacity: 0.8 }}>{footer.copyright}</p>
     </footer>
   );
