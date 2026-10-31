@@ -5,6 +5,7 @@ import { PDFDocument } from "pdf-lib";
 import fontkit from "@pdf-lib/fontkit";
 import sharp from "sharp";
 import { verifyCertificateToken } from "../../../lib/certificate-token.js";
+import { content } from "../../../src/data/content";
 
 const MAX_NAME_LENGTH = 80;
 const MAX_NAME_WIDTH = 475;
@@ -61,16 +62,18 @@ export async function POST(request) {
   try {
     body = await request.json();
   } catch {
-    return json({ success: false, message: "Invalid certificate request." }, 400);
+    return json({ success: false, message: content.en.messages.apiCertificateInvalidRequest }, 400);
   }
+
+  const messages = content[body?.language === "en" ? "en" : "mr"].messages;
 
   const name = typeof body?.name === "string" ? body.name.trim().replace(/\s+/g, " ") : "";
   if (name.length < 2 || name.length > MAX_NAME_LENGTH || !/^\p{L}[\p{L}\p{M}]*(?: [\p{L}][\p{L}\p{M}]*)*$/u.test(name)) {
-    return json({ success: false, message: "Please provide a valid participant name." }, 400);
+    return json({ success: false, message: messages.apiCertificateInvalidName }, 400);
   }
   const sharedSecret = process.env.GOOGLE_APPS_SCRIPT_SHARED_SECRET;
   if (!sharedSecret || !verifyCertificateToken(name, body?.certificateToken, sharedSecret)) {
-    return json({ success: false, message: "प्रमाणपत्र तयार करण्यासाठी नोंदणी यशस्वी झाल्याची पुष्टी आवश्यक आहे." }, 403);
+    return json({ success: false, message: messages.apiCertificateConfirmation }, 403);
   }
 
   try {
@@ -94,7 +97,7 @@ export async function POST(request) {
       shapedName = layoutName(runs, devanagariFont, latinFont, fontSize);
     }
     if (shapedName.width > MAX_NAME_WIDTH) {
-      return json({ success: false, message: "This name is too long to fit on the certificate." }, 400);
+      return json({ success: false, message: messages.apiCertificateNameTooLong }, 400);
     }
 
     const nameImageBytes = await sharp(Buffer.from(shapedNameSvg(shapedName))).png().toBuffer();

@@ -1,29 +1,9 @@
 ﻿"use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import designContent from "./design-content";
-import designInteractions from "./design-interactions";
-import { accordionData } from "./accordion-data";
-import { validateRegistration } from "../lib/registration-validation.js";
-
-function renderAccordionItems(group, items, activeIndex) {
-  return items
-    .map((item, index) => {
-      const open = activeIndex === index ? " open" : "";
-      return `<details data-accordion-group="${group}" data-accordion-index="${index}"${open}><summary>${item.summary}</summary>${item.body}</details>`;
-    })
-    .join("");
-}
-
-function renderPage() {
-  const rules = `<div id="rules-accordion-root" class="acc">${renderAccordionItems("rules", accordionData.rules, 0)}</div>`;
-  const faq = `<div id="faq-accordion-root" class="fq">${renderAccordionItems("faq", accordionData.faq, 0)}</div>`;
-  return designContent
-    .replace('<div id="rules-accordion-root" class="acc"></div>', rules)
-    .replace('<div id="faq-accordion-root" class="fq"></div>', faq);
-}
-
-const INVALID_FORM_MESSAGE = "कृपया नोंदणी पूर्ण करण्यापूर्वी दाखवलेली माहिती दुरुस्त करा.";
+import designInteractions from "../../../app/design-interactions";
+import { validateRegistration } from "../../../lib/registration-validation.js";
+import { useLanguage, useLanguageContent } from "@/src/components/layout/LanguageProvider";
 
 const FORM_KEYS = {
   rt: "registrationType",
@@ -99,7 +79,10 @@ function AccordionController({ root }) {
   return null;
 }
 
-export default function ShivbaDesign() {
+export default function SiteInteractions({ children }) {
+  const { language } = useLanguage();
+  const content = useLanguageContent();
+  const invalidFormMessage = content.messages.invalidForm;
   const root = useRef(null);
   const submitting = useRef(false);
   const [formErrors, setFormErrors] = useState({});
@@ -120,15 +103,25 @@ export default function ShivbaDesign() {
     script.textContent = designInteractions;
     root.current?.appendChild(script);
     return () => script.remove();
-  }, []);
+  }, [designInteractions]);
 
   useEffect(() => {
     const nameInput = root.current?.querySelector("#rn");
     if (!nameInput) return;
     nameInput.placeholder = registrationType === "group"
-      ? "\u0909\u0926\u093e. \u0936\u093f\u0935\u092c\u093e \u092a\u094d\u0930\u0924\u093f\u0937\u094d\u0920\u093e\u0928 \u0938\u092e\u0942\u0939"
-      : "\u0909\u0926\u093e. \u0930\u094b\u0939\u0928 \u092a\u093e\u091f\u0940\u0932";
-  }, [registrationType]);
+      ? content.messages.groupPlaceholder
+      : content.messages.individualPlaceholder;
+  }, [registrationType, language, content.messages]);
+
+  useEffect(() => {
+    const form = root.current?.querySelector("#registration-form");
+    if (!form || Object.keys(formErrors).length === 0) return;
+    const { errors } = validateRegistration(getFormValues(form), language);
+    setFormErrors(errors);
+    setSubmission((current) => current.status === "error"
+      ? { ...current, message: content.messages.invalidForm }
+      : current);
+  }, [language, content.messages]);
 
   useEffect(() => {
     const container = root.current;
@@ -161,12 +154,12 @@ export default function ShivbaDesign() {
       button.setAttribute("aria-busy", String(submission.status === "submitting"));
       const label = button.querySelector(".submit-label");
       if (label) {
-        if (submission.status === "submitting") label.textContent = "नोंदणी पाठवत आहोत…";
-        else if (submission.status === "success") label.textContent = "नोंदणी जतन झाली";
-        else label.textContent = "नोंदणी पूर्ण करा";
+        if (submission.status === "submitting") label.textContent = content.messages.submitButtonSubmitting;
+        else if (submission.status === "success") label.textContent = content.messages.submitButtonSuccess;
+        else label.textContent = content.messages.submitButtonIdle;
       }
     }
-  }, [formErrors, submission]);
+  }, [formErrors, submission, content.messages]);
 
   const closeCertificate = useCallback(() => {
     certificateRequestId.current += 1;
@@ -200,33 +193,33 @@ export default function ShivbaDesign() {
     const requestId = certificateRequestId.current + 1;
     certificateRequestId.current = requestId;
     certificateGenerating.current = true;
-    setSubmission({ status: "submitting", message: "नोंदणी जतन झाली. प्रमाणपत्र तयार करत आहोत…" });
-    setCertificate({ open: false, status: "loading", name, token, url: "", message: "प्रमाणपत्र तयार करत आहोत…" });
+    setSubmission({ status: "submitting", message: content.messages.savedAndGenerating });
+    setCertificate({ open: false, status: "loading", name, token, url: "", message: content.messages.generatingCertificate });
     try {
       const response = await fetch("/api/certificate", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ name, certificateToken: token }),
+        body: JSON.stringify({ name, certificateToken: token, language }),
       });
       if (!response.ok) {
         const result = await response.json().catch(() => ({}));
-        throw new Error(result.message || "प्रमाणपत्र तयार करता आले नाही. कृपया पुन्हा प्रयत्न करा.");
+        throw new Error(result.message || content.messages.certificateFailed);
       }
       const pdfBlob = await response.blob();
       if (pdfBlob.type !== "application/pdf" || pdfBlob.size === 0) {
-        throw new Error("प्रमाणपत्राची PDF फाइल तयार करता आली नाही. कृपया पुन्हा प्रयत्न करा.");
+        throw new Error(content.messages.certificatePdfFailed);
       }
       if (certificateRequestId.current !== requestId) return;
       if (certificateUrl.current) URL.revokeObjectURL(certificateUrl.current);
       certificateBlob.current = pdfBlob;
       certificateUrl.current = URL.createObjectURL(pdfBlob);
       setCertificate({ open: true, status: "ready", name, token, url: certificateUrl.current, message: "" });
-      setSubmission({ status: "success", message: "नोंदणी यशस्वीरीत्या जतन झाली." });
+      setSubmission({ status: "success", message: content.messages.saved });
       return true;
     } catch (error) {
       if (certificateRequestId.current !== requestId) return;
-      setCertificate({ open: false, status: "error", name, token, url: "", message: error.message || "प्रमाणपत्र तयार करता आले नाही. कृपया पुन्हा प्रयत्न करा." });
-      setSubmission({ status: "error", message: "नोंदणी जतन झाली; परंतु प्रमाणपत्र तयार करता आले नाही. पुन्हा प्रयत्न करा." });
+      setCertificate({ open: false, status: "error", name, token, url: "", message: error.message || content.messages.certificateFailed });
+      setSubmission({ status: "error", message: content.messages.savedCertificateFailed });
       return false;
     } finally {
       if (certificateRequestId.current === requestId) certificateGenerating.current = false;
@@ -246,7 +239,7 @@ export default function ShivbaDesign() {
 
   function openCertificatePreview() {
     if (!certificateBlob.current || !certificate.url || !("BroadcastChannel" in window)) {
-      setPreviewMessage("प्रमाणपत्राचा preview उघडता आला नाही. कृपया पुन्हा प्रयत्न करा.");
+      setPreviewMessage(content.messages.previewUnavailable);
       return;
     }
 
@@ -280,7 +273,7 @@ export default function ShivbaDesign() {
     if (!tab) {
       channel.close();
       previewChannel.current = null;
-      setPreviewMessage("नवीन tab उघडला नाही. कृपया या वेबसाइटसाठी pop-ups सुरू करा.");
+      setPreviewMessage(content.messages.popupBlocked);
       return;
     }
     tab.opener = null;
@@ -290,7 +283,7 @@ export default function ShivbaDesign() {
         channel.postMessage({ type: "timeout" });
         channel.close();
         previewChannel.current = null;
-        setPreviewMessage("नवीन tab मध्ये certificate preview लोड झाले नाही. पुन्हा प्रयत्न करा.");
+        setPreviewMessage(content.messages.previewNotLoaded);
       }
       previewTimer.current = null;
     }, 20000);
@@ -307,8 +300,8 @@ export default function ShivbaDesign() {
       if (event.target.value !== digitsOnly) event.target.value = digitsOnly;
     }
 
-    const { errors } = validateRegistration(getFormValues(form));
-    if (Object.keys(errors).length === 0 && submission.message === INVALID_FORM_MESSAGE) {
+    const { errors } = validateRegistration(getFormValues(form), language);
+    if (Object.keys(errors).length === 0 && submission.message === invalidFormMessage) {
       setSubmission({ status: "idle", message: "" });
     }
     setFormErrors((current) => {
@@ -325,28 +318,28 @@ export default function ShivbaDesign() {
     event.preventDefault();
     if (submitting.current) return;
 
-    const { values, errors, valid } = validateRegistration(getFormValues(form));
+    const { values, errors, valid } = validateRegistration(getFormValues(form), language);
     setFormErrors(errors);
     if (!valid) {
-      setSubmission({ status: "error", message: INVALID_FORM_MESSAGE });
+      setSubmission({ status: "error", message: invalidFormMessage });
       const firstInvalidField = Object.keys(errors)[0];
       form.querySelector(`[name="${FORM_NAMES[firstInvalidField] || firstInvalidField}"]`)?.focus();
       return;
     }
 
     submitting.current = true;
-    setSubmission({ status: "submitting", message: "नोंदणी पाठवत आहोत…" });
+    setSubmission({ status: "submitting", message: content.messages.submitting });
     try {
       const response = await fetch("/api/registration", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify(values),
+        body: JSON.stringify({ ...values, language }),
       });
       const result = await response.json();
 
       if (!response.ok || result.success !== true) {
         if (result.errors) setFormErrors(result.errors);
-        setSubmission({ status: "error", message: result.message || "नोंदणी जतन झाली नाही. कृपया पुन्हा प्रयत्न करा." });
+        setSubmission({ status: "error", message: result.message || content.messages.registrationFailed });
         return;
       }
 
@@ -355,7 +348,7 @@ export default function ShivbaDesign() {
       setFormErrors({});
       await generateCertificate(values.name, result.certificateToken);
     } catch {
-      setSubmission({ status: "error", message: "नोंदणी सेवा सध्या उपलब्ध नाही. कृपया पुन्हा प्रयत्न करा." });
+      setSubmission({ status: "error", message: content.messages.serviceUnavailable });
     } finally {
       submitting.current = false;
     }
@@ -368,37 +361,36 @@ export default function ShivbaDesign() {
         onInput={handleFieldChange}
         onChange={handleFieldChange}
         onSubmit={handleFormSubmit}
-        dangerouslySetInnerHTML={{ __html: renderPage() }}
-      />
+      >{children}</div>
       <AccordionController root={root} />
       {certificate.status === "error" && !certificate.open && (
         <div className="certificate-retry-banner" role="alert">
           <span>{certificate.message}</span>
-          <button type="button" className="certificate-retry" onClick={() => generateCertificate(certificate.name, certificate.token)}>पुन्हा प्रयत्न करा</button>
+          <button type="button" className="certificate-retry" onClick={() => generateCertificate(certificate.name, certificate.token)}>{content.messages.retry}</button>
         </div>
       )}
       {certificate.open && (
         <div className="certificate-overlay" onMouseDown={(event) => event.target === event.currentTarget && closeCertificate()}>
           <section className="certificate-modal" data-status={certificate.status} role="dialog" aria-modal="true" aria-labelledby="certificate-title">
-            <button className="certificate-close" type="button" onClick={closeCertificate} aria-label="Close certificate">×</button>
+            <button className="certificate-close" type="button" onClick={closeCertificate} aria-label={content.messages.close}>×</button>
             <header className="certificate-heading">
               <div className="certificate-success-mark" aria-hidden="true">✓</div>
-              <h2 id="certificate-title">Registration Successful!</h2>
-              {certificate.status === "ready" && <p className="certificate-subtitle">Your participation certificate is ready.</p>}
+              <h2 id="certificate-title">{content.messages.successTitle}</h2>
+              {certificate.status === "ready" && <p className="certificate-subtitle">{content.messages.certificateReady}</p>}
             </header>
             <div className="certificate-modal-body">
               {certificate.status === "ready" && (
                 <div className="certificate-document">
-                  <iframe className="certificate-preview" src={certificate.url} title={`Participation certificate for ${certificate.name}`} />
+                  <iframe className="certificate-preview" src={certificate.url} title={`${content.certificatePreview.participationCertificate} for ${certificate.name}`} />
                 </div>
               )}
               <div className="certificate-details">
-                <p className="certificate-detail-label">प्रमाणपत्रासाठी</p>
+                <p className="certificate-detail-label">{content.messages.certificateFor}</p>
                 <p className="certificate-participant">{certificate.name}</p>
                 {certificate.status === "ready" && (
                   <div className="certificate-actions">
-                    <button className="certificate-preview-action" type="button" onClick={openCertificatePreview}>Preview Certificate <span aria-hidden="true">↗</span></button>
-                    <button className="btn pri certificate-download" type="button" onClick={downloadCertificate}>Download Certificate</button>
+                    <button className="certificate-preview-action" type="button" onClick={openCertificatePreview}>{content.messages.previewAction} <span aria-hidden="true">↗</span></button>
+                    <button className="btn pri certificate-download" type="button" onClick={downloadCertificate}>{content.messages.downloadAction}</button>
                   </div>
                 )}
                 {previewMessage && <p className="certificate-preview-message" role="status">{previewMessage}</p>}
@@ -410,5 +402,6 @@ export default function ShivbaDesign() {
     </>
   );
 }
+
 
 

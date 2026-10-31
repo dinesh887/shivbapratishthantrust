@@ -1,11 +1,16 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useLanguage, useLanguageContent } from "@/src/components/layout/LanguageProvider";
 
-export default function CertificatePreviewClient({ channelId }) {
-  const [preview, setPreview] = useState(() => channelId
-    ? { status: "loading", name: "", url: "", message: "प्रमाणपत्र लोड करत आहोत…" }
-    : { status: "error", name: "", url: "", message: "Certificate preview उपलब्ध नाही. कृपया नोंदणी पानावरून पुन्हा उघडा." });
+type PreviewState = { status: "loading" | "error" | "ready"; name: string; url: string; message: string };
+
+export default function CertificatePreviewClient({ channelId }: { channelId: string }) {
+  const { language } = useLanguage();
+  const content = useLanguageContent();
+  const [preview, setPreview] = useState<PreviewState>(() => channelId
+    ? { status: "loading", name: "", url: "", message: content.certificatePreview.loading }
+    : { status: "error", name: "", url: "", message: content.certificatePreview.unavailable });
 
   useEffect(() => {
     if (!channelId || !("BroadcastChannel" in window)) return;
@@ -16,14 +21,14 @@ export default function CertificatePreviewClient({ channelId }) {
     const timeout = window.setTimeout(() => {
       if (received) return;
       received = true;
-      setPreview({ status: "error", name: "", url: "", message: "Certificate preview लोड झाले नाही. कृपया मागील tab मधून पुन्हा प्रयत्न करा." });
+      setPreview({ status: "error", name: "", url: "", message: content.certificatePreview.notLoaded });
     }, 20000);
 
     channel.onmessage = ({ data }) => {
       if (data?.type === "timeout") {
         received = true;
         window.clearTimeout(timeout);
-        setPreview({ status: "error", name: "", url: "", message: "Certificate preview लोड झाले नाही. कृपया मागील tab मधून पुन्हा प्रयत्न करा." });
+        setPreview({ status: "error", name: "", url: "", message: content.certificatePreview.notLoaded });
         return;
       }
       if (data?.type !== "certificate" || received || !(data.blob instanceof Blob) || data.blob.type !== "application/pdf") return;
@@ -41,22 +46,29 @@ export default function CertificatePreviewClient({ channelId }) {
       window.clearTimeout(timeout);
       if (objectUrl) URL.revokeObjectURL(objectUrl);
     };
-  }, [channelId]);
+  }, [channelId, language]);
+
+  useEffect(() => {
+    setPreview((current) => current.status === "ready" ? current : {
+      ...current,
+      message: current.status === "loading" ? content.certificatePreview.loading : content.certificatePreview.unavailable,
+    });
+  }, [language]);
 
   const filename = `Certificate_${preview.name.replace(/[^\p{L}\p{N} -]/gu, "").trim().replace(/\s+/g, "_") || "Participant"}.pdf`;
 
   return (
-    <section className="certificate-tab-content" aria-label="Participation certificate">
+    <section className="certificate-tab-content" aria-label={content.certificatePreview.participationCertificate}>
       {preview.status === "loading" && <p className="certificate-tab-message" role="status">{preview.message}</p>}
       {preview.status === "error" && <p className="certificate-tab-message error" role="alert">{preview.message}</p>}
       {preview.status === "ready" && (
         <>
           <div className="certificate-tab-toolbar">
-            <p>प्रमाणपत्र: <strong>{preview.name}</strong></p>
-            <a className="btn pri" href={preview.url} download={filename}>Download Certificate</a>
+            <p>{content.certificatePreview.label} <strong>{preview.name}</strong></p>
+            <a className="btn pri" href={preview.url} download={filename}>{content.certificatePreview.download}</a>
           </div>
           <div className="certificate-tab-document">
-            <iframe src={preview.url} title={`Participation certificate for ${preview.name}`} />
+            <iframe src={preview.url} title={`${content.certificatePreview.participationCertificate} for ${preview.name}`} />
           </div>
         </>
       )}
