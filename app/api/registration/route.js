@@ -25,8 +25,8 @@ export async function POST(request) {
   const { values, errors, valid } = validateRegistration(input, language);
   if (!valid) return json({ success: false, errors, message: messages.apiCorrectInformation }, 422);
 
-  const endpoint = process.env.GOOGLE_APPS_SCRIPT_URL;
-  const sharedSecret = process.env.GOOGLE_APPS_SCRIPT_SHARED_SECRET;
+  const endpoint = process.env.google_apps_script_url || process.env.GOOGLE_APPS_SCRIPT_URL;
+  const sharedSecret = process.env.google_apps_script_shared_secret || process.env.GOOGLE_APPS_SCRIPT_SHARED_SECRET;
   if (!endpoint || !sharedSecret || sharedSecret.length < 32) {
     return json({ success: false, message: messages.apiRegistrationUnconfigured }, 503);
   }

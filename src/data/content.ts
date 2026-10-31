@@ -361,22 +361,22 @@ export const content: BilingualContent = {
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9C%E0%A5%8B%E0%A4%A4%20%F0%9F%9A%A9%F0%9F%9A%A9%F0%9F%9A%A9%23shivjayanti%20%23shivjayanti%F0%9F%9A%A9%20%23shivjayanti2025%20%23shivbapratishthan%20%23shivbaprat%20(3).jpg",
+            "src": "/gallery/shivprerna-jyot-04.jpg",
             "alt": "शिवजयंतीनिमित्त शिवप्रेरणा ज्योत कार्यक्रमातील दृश्य",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9C%E0%A5%8B%E0%A4%A4%20%F0%9F%9A%A9%F0%9F%9A%A9%F0%9F%9A%A9%23shivjayanti%20%23shivjayanti%F0%9F%9A%A9%20%23shivjayanti2025%20%23shivbapratishthan%20%23shivbaprat%20(2).jpg",
+            "src": "/gallery/shivprerna-jyot-03.jpg",
             "alt": "शिवजयंतीनिमित्त शिवप्रेरणा ज्योत कार्यक्रमातील दृश्य",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9C%E0%A5%8B%E0%A4%A4%20%F0%9F%9A%A9%F0%9F%9A%A9%F0%9F%9A%A9%23shivjayanti%20%23shivjayanti%F0%9F%9A%A9%20%23shivjayanti2025%20%23shivbapratishthan%20%23shivbaprat%20(1).jpg",
+            "src": "/gallery/shivprerna-jyot-02.jpg",
             "alt": "शिवजयंतीनिमित्त शिवप्रेरणा ज्योत कार्यक्रमातील दृश्य",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9C%E0%A5%8B%E0%A4%A4%20%F0%9F%9A%A9%F0%9F%9A%A9%F0%9F%9A%A9%23shivjayanti%20%23shivjayanti%F0%9F%9A%A9%20%23shivjayanti2025%20%23shivbapratishthan%20%23shivbaprat.jpg",
+            "src": "/gallery/shivprerna-jyot-01.jpg",
             "alt": "शिवजयंतीनिमित्त शिवप्रेरणा ज्योत कार्यक्रमातील दृश्य",
             "category": "social"
           },
@@ -1176,22 +1176,22 @@ export const content: BilingualContent = {
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9C%E0%A5%8B%E0%A4%A4%20%F0%9F%9A%A9%F0%9F%9A%A9%F0%9F%9A%A9%23shivjayanti%20%23shivjayanti%F0%9F%9A%A9%20%23shivjayanti2025%20%23shivbapratishthan%20%23shivbaprat%20(3).jpg",
+            "src": "/gallery/shivprerna-jyot-04.jpg",
             "alt": "A scene from the Shivprerna Jyot program held for Shiv Jayanti.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9C%E0%A5%8B%E0%A4%A4%20%F0%9F%9A%A9%F0%9F%9A%A9%F0%9F%9A%A9%23shivjayanti%20%23shivjayanti%F0%9F%9A%A9%20%23shivjayanti2025%20%23shivbapratishthan%20%23shivbaprat%20(2).jpg",
+            "src": "/gallery/shivprerna-jyot-03.jpg",
             "alt": "A scene from the Shivprerna Jyot program held for Shiv Jayanti.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9C%E0%A5%8B%E0%A4%A4%20%F0%9F%9A%A9%F0%9F%9A%A9%F0%9F%9A%A9%23shivjayanti%20%23shivjayanti%F0%9F%9A%A9%20%23shivjayanti2025%20%23shivbapratishthan%20%23shivbaprat%20(1).jpg",
+            "src": "/gallery/shivprerna-jyot-02.jpg",
             "alt": "A scene from the Shivprerna Jyot program held for Shiv Jayanti.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A5%87%E0%A4%B0%E0%A4%A8%E0%A4%BE%20%E0%A4%9C%E0%A5%8B%E0%A4%A4%20%F0%9F%9A%A9%F0%9F%9A%A9%F0%9F%9A%A9%23shivjayanti%20%23shivjayanti%F0%9F%9A%A9%20%23shivjayanti2025%20%23shivbapratishthan%20%23shivbaprat.jpg",
+            "src": "/gallery/shivprerna-jyot-01.jpg",
             "alt": "A scene from the Shivprerna Jyot program held for Shiv Jayanti.",
             "category": "social"
           },

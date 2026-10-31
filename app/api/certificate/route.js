@@ -71,7 +71,7 @@ export async function POST(request) {
   if (name.length < 2 || name.length > MAX_NAME_LENGTH || !/^\p{L}[\p{L}\p{M}]*(?: [\p{L}][\p{L}\p{M}]*)*$/u.test(name)) {
     return json({ success: false, message: messages.apiCertificateInvalidName }, 400);
   }
-  const sharedSecret = process.env.GOOGLE_APPS_SCRIPT_SHARED_SECRET;
+  const sharedSecret = process.env.google_apps_script_shared_secret || process.env.GOOGLE_APPS_SCRIPT_SHARED_SECRET;
   if (!sharedSecret || !verifyCertificateToken(name, body?.certificateToken, sharedSecret)) {
     return json({ success: false, message: messages.apiCertificateConfirmation }, 403);
   }
