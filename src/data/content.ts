@@ -326,37 +326,37 @@ export const content: BilingualContent = {
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%9C%E0%A4%AF%E0%A4%82%E0%A4%A4%E0%A5%80%E0%A4%A8%E0%A4%BF%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%A4%20%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AE%E0%A4%A7%E0%A5%80%E0%A4%B2%20%E0%A4%B0.jpg",
+            "src": "/gallery/shiv-jayanti-greetings.jpg",
             "alt": "शिवबा प्रतिष्ठान ट्रस्टच्या शिवजयंती शुभेच्छा आणि सत्कार समारंभाचे पोस्टर",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(5).jpg",
+            "src": "/gallery/flood-relief-2019-06.jpg",
             "alt": "२०१९ च्या पुरग्रस्तांसाठी मदत व सेवा उपक्रमातील दृश्य",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(4).jpg",
+            "src": "/gallery/flood-relief-2019-05.jpg",
             "alt": "२०१९ च्या पुरग्रस्तांसाठी मदत व सेवा उपक्रमातील दृश्य",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(3).jpg",
+            "src": "/gallery/flood-relief-2019-04.jpg",
             "alt": "२०१९ च्या पुरग्रस्तांसाठी मदत व सेवा उपक्रमातील दृश्य",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(1).jpg",
+            "src": "/gallery/flood-relief-2019-02.jpg",
             "alt": "२०१९ च्या पुरग्रस्तांसाठी मदत व सेवा उपक्रमातील दृश्य",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(2).jpg",
+            "src": "/gallery/flood-relief-2019-03.jpg",
             "alt": "२०१९ च्या पुरग्रस्तांसाठी मदत व सेवा उपक्रमातील दृश्य",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA.jpg",
+            "src": "/gallery/flood-relief-2019-01.jpg",
             "alt": "२०१९ च्या पुरग्रस्तांसाठी मदत व सेवा उपक्रमातील दृश्य",
             "category": "social"
           },
@@ -381,32 +381,32 @@ export const content: BilingualContent = {
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%20(4).jpg",
+            "src": "/gallery/volleyball-shirt-distribution-05.jpg",
             "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%20(3).jpg",
+            "src": "/gallery/volleyball-shirt-distribution-04.jpg",
             "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%20(2).jpg",
+            "src": "/gallery/volleyball-shirt-distribution-03.jpg",
             "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%20(1).jpg",
+            "src": "/gallery/volleyball-shirt-distribution-02.jpg",
             "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE.jpg",
+            "src": "/gallery/volleyball-shirt-distribution-01.jpg",
             "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%A8%E0%A5%87%20%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B2%E0%A5%87%20%E0%A4%AE%E0%A4%B9%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B8%E0%A4%B5%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%82%E0%A4%A6%E0%A4%BE3%20%E0%A4%B0%E0%A4%BE%20%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%95%20%E0%A4%AA%E0%A4%9F%E0%A4%95%E0%A4%BE%E0%A4%B5%E0%A4%B2%E0%A4%BE%20%E0%A4%86.jpg",
+            "src": "/gallery/volleyball-parle-third-place.jpg",
             "alt": "पार्ले महोत्सवात तिसरा क्रमांक मिळवलेल्या छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाचे अभिनंदन करणारे पोस्टर",
             "category": "social"
           },
@@ -442,17 +442,17 @@ export const content: BilingualContent = {
             "category": "forts"
           },
           {
-            "src": "/gallery/%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%95%20%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A5%87%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A4%BE%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%80%20%E0%A4%B8%E0%A5%81%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A5%87%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0%20%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%A8%20%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%97%E0%A4%A1%20%E0%A4%B5%E0%A4%B0......%E0%A4%B6%E0%A4%BF.jpg",
+            "src": "/gallery/raigad-new-year-honors-01.jpg",
             "alt": "रायगडावर पुरस्कार व सन्मानपत्र स्वीकारतानाचा सोहळा",
             "category": "social"
           },
           {
-            "src": "/gallery/%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%95%20%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A5%87%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A4%BE%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%80%20%E0%A4%B8%E0%A5%81%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A5%87%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0%20%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%A8%20%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%97%E0%A4%A1%20%E0%A4%B5%E0%A4%B0......%E0%A4%B6%E0%A4%BF%20(1).jpg",
+            "src": "/gallery/raigad-new-year-honors-02.jpg",
             "alt": "रायगडावरील सन्मान सोहळ्यात सहभागी झालेले शिवभक्त",
             "category": "social"
           },
           {
-            "src": "/gallery/%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%95%20%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A5%87%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A4%BE%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%80%20%E0%A4%B8%E0%A5%81%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A5%87%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0%20%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%A8%20%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%97%E0%A4%A1%20%E0%A4%B5%E0%A4%B0......%E0%A4%B6%E0%A4%BF%20(2).jpg",
+            "src": "/gallery/raigad-new-year-honors-03.jpg",
             "alt": "रायगडावरील पुरस्कार वितरण सोहळा",
             "category": "social"
           }
@@ -1141,37 +1141,37 @@ export const content: BilingualContent = {
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%E0%A4%BE%E0%A4%82%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%9C%E0%A4%AF%E0%A4%82%E0%A4%A4%E0%A5%80%E0%A4%A8%E0%A4%BF%E0%A4%AE%E0%A4%BF%E0%A4%A4%E0%A5%8D%E0%A4%A4%20%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AE%E0%A4%A7%E0%A5%80%E0%A4%B2%20%E0%A4%B0.jpg",
+            "src": "/gallery/shiv-jayanti-greetings.jpg",
             "alt": "A poster with Shivba Pratishthan Trust’s Shiv Jayanti greetings and felicitation ceremony announcement.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(5).jpg",
+            "src": "/gallery/flood-relief-2019-06.jpg",
             "alt": "A scene from a relief and service effort for people affected by the 2019 floods.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(4).jpg",
+            "src": "/gallery/flood-relief-2019-05.jpg",
             "alt": "A scene from a relief and service effort for people affected by the 2019 floods.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(3).jpg",
+            "src": "/gallery/flood-relief-2019-04.jpg",
             "alt": "A scene from a relief and service effort for people affected by the 2019 floods.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(1).jpg",
+            "src": "/gallery/flood-relief-2019-02.jpg",
             "alt": "A scene from a relief and service effort for people affected by the 2019 floods.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%20(2).jpg",
+            "src": "/gallery/flood-relief-2019-03.jpg",
             "alt": "A scene from a relief and service effort for people affected by the 2019 floods.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E2%80%9C%E0%A4%86%E0%A4%AA%E0%A4%A4%E0%A5%8D%E0%A4%A4%E0%A5%80%20%E0%A4%86%E0%A4%B2%E0%A5%80%2C%20%E0%A4%AA%E0%A4%A3%20%E0%A4%AE%E0%A4%BE%E0%A4%A3%E0%A5%81%E0%A4%B8%E0%A4%95%E0%A5%80%20%E0%A4%9C%E0%A4%BE%E0%A4%97%E0%A5%80%20%E0%A4%9D%E0%A4%BE%E0%A4%B2%E0%A5%80!%20%E0%A4%9A%E0%A4%B2%E0%A4%BE%2C%20%E0%A4%AE%E0%A4%A6%E0%A4%A4%E0%A5%80%E0%A4%9A%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%87%E0%A4%8A%E0%A4%AF%E0%A4%BE%20%E0%A4%AA%E0%A5%81%E0%A4%B0%E0%A4%97%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%A4%E0%A4%BE%E0%A4%82%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%F0%9F%99%8F%E2%80%9D%E0%A5%A8%E0%A5%A6%E0%A5%A7%E0%A5%AF%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%86%E0%A4%B2%E0%A5%87%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%AA.jpg",
+            "src": "/gallery/flood-relief-2019-01.jpg",
             "alt": "A scene from a relief and service effort for people affected by the 2019 floods.",
             "category": "social"
           },
@@ -1196,32 +1196,32 @@ export const content: BilingualContent = {
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%20(4).jpg",
+            "src": "/gallery/volleyball-shirt-distribution-05.jpg",
             "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%20(3).jpg",
+            "src": "/gallery/volleyball-shirt-distribution-04.jpg",
             "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%20(2).jpg",
+            "src": "/gallery/volleyball-shirt-distribution-03.jpg",
             "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE%20(1).jpg",
+            "src": "/gallery/volleyball-shirt-distribution-02.jpg",
             "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%AC%E0%A4%BE%20%E0%A4%AA%E0%A5%8D%E0%A4%B0%E0%A4%A4%E0%A4%BF%E0%A4%B7%E0%A5%8D%E0%A4%A0%E0%A4%BE%E0%A4%A8%20%E0%A4%9F%E0%A5%8D%E0%A4%B0%E0%A4%B8%E0%A5%8D%E0%A4%9F%20%E0%A4%A4%E0%A4%B0%E0%A5%8D%E0%A4%AB%E0%A5%87%20%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%AF%E0%A4%BE%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%B8%E0%A4%BE%E0%A4%A0%E0%A5%80%20%E0%A4%9F%E0%A5%80%20%E0%A4%B6%E0%A4%B0%E0%A5%8D%E0%A4%9F%E0%A4%9A%E0%A5%87%20%E0%A4%B5%E0%A4%BE%E0%A4%9F%E0%A4%AA%20%E0%A4%B8%E0%A4%AE%E0%A4%BE.jpg",
+            "src": "/gallery/volleyball-shirt-distribution-01.jpg",
             "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
-            "src": "/gallery/%E0%A4%9B%E0%A4%A4%E0%A5%8D%E0%A4%B0%E0%A4%AA%E0%A4%A4%E0%A5%80%20%E0%A4%B8%E0%A4%82%E0%A4%AD%E0%A4%BE%E0%A4%9C%E0%A5%80%20%E0%A4%AE%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A4%BE%E0%A4%9C%20%E0%A4%A8%E0%A4%97%E0%A4%B0%20%E0%A4%B5%E0%A5%8D%E0%A4%B9%E0%A5%89%E0%A4%B2%E0%A5%80%E0%A4%AC%E0%A5%89%E0%A4%B2%20%E0%A4%B8%E0%A4%82%E0%A4%98%E0%A4%BE%E0%A4%A8%E0%A5%87%20%E0%A4%AA%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%B2%E0%A5%87%20%E0%A4%AE%E0%A4%B9%E0%A5%8B%E0%A4%A4%E0%A5%8D%E0%A4%B8%E0%A4%B5%20%E0%A4%AE%E0%A4%A7%E0%A5%8D%E0%A4%AF%E0%A5%87%20%E0%A4%AA%E0%A4%B9%E0%A4%BF%E0%A4%B2%E0%A5%8D%E0%A4%AF%E0%A4%BE%E0%A4%82%E0%A4%A6%E0%A4%BE3%20%E0%A4%B0%E0%A4%BE%20%E0%A4%95%E0%A5%8D%E0%A4%B0%E0%A4%AE%E0%A4%BE%E0%A4%82%E0%A4%95%20%E0%A4%AA%E0%A4%9F%E0%A4%95%E0%A4%BE%E0%A4%B5%E0%A4%B2%E0%A4%BE%20%E0%A4%86.jpg",
+            "src": "/gallery/volleyball-parle-third-place.jpg",
             "alt": "A poster congratulating the Chhatrapati Sambhaji Maharaj Nagar volleyball team for winning third place at the Parle Festival.",
             "category": "social"
           },
@@ -1257,17 +1257,17 @@ export const content: BilingualContent = {
             "category": "forts"
           },
           {
-            "src": "/gallery/%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%95%20%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A5%87%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A4%BE%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%80%20%E0%A4%B8%E0%A5%81%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A5%87%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0%20%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%A8%20%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%97%E0%A4%A1%20%E0%A4%B5%E0%A4%B0......%E0%A4%B6%E0%A4%BF.jpg",
+            "src": "/gallery/raigad-new-year-honors-01.jpg",
             "alt": "Award and certificate presentation ceremony at Raigad Fort.",
             "category": "social"
           },
           {
-            "src": "/gallery/%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%95%20%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A5%87%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A4%BE%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%80%20%E0%A4%B8%E0%A5%81%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A5%87%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0%20%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%A8%20%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%97%E0%A4%A1%20%E0%A4%B5%E0%A4%B0......%E0%A4%B6%E0%A4%BF%20(1).jpg",
+            "src": "/gallery/raigad-new-year-honors-02.jpg",
             "alt": "Devotees attending the felicitation ceremony at Raigad Fort.",
             "category": "social"
           },
           {
-            "src": "/gallery/%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%8D%E0%A4%AF%E0%A4%BE%20%E0%A4%B9%E0%A4%BE%E0%A4%B0%E0%A5%8D%E0%A4%A6%E0%A4%BF%E0%A4%95%20%E0%A4%B6%E0%A5%81%E0%A4%AD%E0%A5%87%E0%A4%9A%E0%A5%8D%E0%A4%9B%E0%A4%BE%F0%9F%9A%A9%E0%A4%A8%E0%A4%B5%E0%A5%80%E0%A4%A8%20%E0%A4%B5%E0%A4%B0%E0%A5%8D%E0%A4%B7%E0%A4%BE%E0%A4%9A%E0%A5%80%20%E0%A4%B8%E0%A5%81%E0%A4%B0%E0%A4%B5%E0%A4%BE%E0%A4%A4%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%20%E0%A4%A6%E0%A5%81%E0%A4%B0%E0%A5%8D%E0%A4%97%E0%A5%87%E0%A4%B6%E0%A5%8D%E0%A4%B5%E0%A4%B0%20%E0%A4%B6%E0%A5%8D%E0%A4%B0%E0%A5%80%E0%A4%AE%E0%A4%BE%E0%A4%A8%20%E0%A4%B0%E0%A4%BE%E0%A4%AF%E0%A4%97%E0%A4%A1%20%E0%A4%B5%E0%A4%B0......%E0%A4%B6%E0%A4%BF%20(2).jpg",
+            "src": "/gallery/raigad-new-year-honors-03.jpg",
             "alt": "Awards ceremony at Raigad Fort.",
             "category": "social"
           }
