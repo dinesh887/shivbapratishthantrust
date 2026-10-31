@@ -36,9 +36,12 @@ export default function Header({ className, homeLinks = false }: HeaderProps) {
   const markup = (
     <header style={{ position: "absolute", top: 0, left: 0, right: 0, zIndex: 5, color: "#FBF3E4", background: "linear-gradient(180deg,rgba(63,2,8,.92) 0%,rgba(63,2,8,0) 100%)" }}>
       <div className="w hbar" style={{ display: "flex", alignItems: "center", justifyContent: "space-between", height: 72 }}>
-        <a href={href("#top")} style={{ display: "flex", alignItems: "center", gap: 12, fontWeight: 800, fontSize: 20 }}>
+        <a href={href("#top")} className="header-brand" style={{ display: "flex", alignItems: "center", gap: 12, fontWeight: 800, fontSize: 20 }}>
           <Image src={header.logo.src} alt={header.logo.alt} width={header.logo.width} height={header.logo.height} style={{ width: header.logo.width, height: header.logo.height, objectFit: "contain" }} />
-          {header.brand}
+          <span className="header-brand-copy">
+            <span className="header-brand-name">{header.brand}</span>
+            <span className="header-registration-number">{language === "mr" ? "नोंदणी क्र.: E-36744(m)" : "Registration No.: E-36744(m)"}</span>
+          </span>
         </a>
         <nav className="nav" aria-label={header.navLabel}>{navigationLinks}</nav>
         <div className="desktop-language-switch">{languageButtons}</div>

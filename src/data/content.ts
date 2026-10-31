@@ -23,19 +23,19 @@ export interface BilingualContent { mr:WebsiteLanguageContent; en:WebsiteLanguag
 export const content: BilingualContent = {
   "mr": {
     "site": {
-      "title": "शिवबा प्रतिष्ठान – गडकोट बांधणी स्पर्धा",
-      "description": "शिवबा प्रतिष्ठान गडकोट बांधणी स्पर्धा",
+      "title": "शिवबा प्रतिष्ठान ट्रस्ट (रजि) – गडकोट बांधणी स्पर्धा",
+      "description": "शिवबा प्रतिष्ठान ट्रस्ट (रजि) गडकोट बांधणी स्पर्धा",
       "favicon": "/favicon.ico"
     },
     "layout": {
       "header": {
         "logo": {
           "src": "/images/trust-seal.png",
-          "alt": "शिवबा प्रतिष्ठान ट्रस्ट लोगो",
+          "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि) लोगो",
           "width": 52,
           "height": 52
         },
-        "brand": "शिवबा प्रतिष्ठान ट्रस्ट",
+        "brand": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)",
         "navLabel": "मुख्य",
         "navigation": [
           {
@@ -63,11 +63,11 @@ export const content: BilingualContent = {
       "footer": {
         "logo": {
           "src": "/images/trust-seal.png",
-          "alt": "शिवबा प्रतिष्ठान ट्रस्ट लोगो",
+          "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि) लोगो",
           "width": 80,
           "height": 80
         },
-        "brand": "शिवबा प्रतिष्ठान ट्रस्ट",
+        "brand": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)",
         "description": [
           "सामाजिक कार्याशी कटिबध्द संस्था",
           "गडकोट बांधणी स्पर्धा २०२६"
@@ -83,7 +83,7 @@ export const content: BilingualContent = {
         "address": {
           "label": "पत्ता",
           "lines": [
-            "शिवबा प्रतिष्ठान ट्रस्ट ऑफिस,",
+            "शिवबा प्रतिष्ठान ट्रस्ट (रजि) ऑफिस,",
             "विघ्नेश्वर 2 बी,",
             "छत्रपती संभाजी महाराज नगर,",
             "डी मार्ट समोर, कोलडोंगरी,",
@@ -96,12 +96,12 @@ export const content: BilingualContent = {
             "label": "इन्स्टाग्रामवर आम्हाला फॉलो करा"
           }
         },
-        "copyright": "© २०२६ शिवबा प्रतिष्ठान ट्रस्ट"
+        "copyright": "© २०२६ शिवबा प्रतिष्ठान ट्रस्ट (रजि)"
       }
     },
     "sections": {
       "top": {
-        "tagline": "शिवबा प्रतिष्ठान ट्रस्ट सादर करत आहे",
+        "tagline": "शिवबा प्रतिष्ठान ट्रस्ट (रजि) सादर करत आहे",
         "title": "जगातील पहिली आंतरराष्ट्रीय गड किल्ले बांधणी स्पर्धा 2026",
         "image": {
           "src": "/images/shivba-wordmark.png",
@@ -125,9 +125,9 @@ export const content: BilingualContent = {
       },
       "about": {
         "eyebrow": "आमच्याबद्दल",
-        "title": "शिवबा प्रतिष्ठान ट्रस्ट",
+        "title": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)",
         "paragraphs": [
-          "शिवबा प्रतिष्ठान ट्रस्ट ही सामाजिक कार्याशी कटिबद्ध संस्था असून छत्रपती शिवाजी महाराजांच्या विचारांचा वारसा जपणारी संस्था आहे. संस्थेने २०१६ पासून सामाजिक कार्याच्या माध्यमातून समाजहितासाठी विविध उपक्रम राबवण्यास सुरुवात केली.",
+          "शिवबा प्रतिष्ठान ट्रस्ट (रजि) ही सामाजिक कार्याशी कटिबद्ध संस्था असून छत्रपती शिवाजी महाराजांच्या विचारांचा वारसा जपणारी संस्था आहे. संस्थेने २०१६ पासून सामाजिक कार्याच्या माध्यमातून समाजहितासाठी विविध उपक्रम राबवण्यास सुरुवात केली.",
           "गडकोट बांधणी स्पर्धेतून नवीन पिढीला गड-किल्ल्यांचा इतिहास, स्थापत्य आणि अभिमान जवळून अनुभवता यावा, हा आमचा उद्देश आहे."
         ]
       },
@@ -314,7 +314,7 @@ export const content: BilingualContent = {
       },
       "gallery": {
         "eyebrow": "गॅलरी",
-        "title": "शिवबा प्रतिष्ठान ट्रस्ट – छायाचित्र संग्रह",
+        "title": "शिवबा प्रतिष्ठान ट्रस्ट (रजि) – छायाचित्र संग्रह",
         "subtitle": "सामाजिक कार्य, विविध उपक्रम आणि कार्यक्रमांच्या आठवणींना उजाळा देणारा छायाचित्र संग्रह.",
         "categories": [{"id":"all","label":"सर्व"},{"id":"forts","label":"गडकोट"},{"id":"social","label":"सामाजिक कार्यक्रम"}],
         "noResults": "या विभागात सध्या छायाचित्रे उपलब्ध नाहीत.",
@@ -329,7 +329,7 @@ export const content: BilingualContent = {
           },
           {
             "src": "/gallery/shiv-jayanti-greetings.jpg",
-            "alt": "शिवबा प्रतिष्ठान ट्रस्टच्या शिवजयंती शुभेच्छा आणि सत्कार समारंभाचे पोस्टर",
+            "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)च्या शिवजयंती शुभेच्छा आणि सत्कार समारंभाचे पोस्टर",
             "category": "social"
           },
           {
@@ -384,27 +384,27 @@ export const content: BilingualContent = {
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-05.jpg",
-            "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
+            "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)तर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-04.jpg",
-            "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
+            "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)तर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-03.jpg",
-            "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
+            "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)तर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-02.jpg",
-            "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
+            "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)तर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-01.jpg",
-            "alt": "शिवबा प्रतिष्ठान ट्रस्टतर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
+            "alt": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)तर्फे छत्रपती संभाजी महाराज नगर व्हॉलीबॉल संघाला टी-शर्टचे वाटप",
             "category": "social"
           },
           {
@@ -598,7 +598,7 @@ export const content: BilingualContent = {
         "title": "वारंवार विचारले जाणारे प्रश्न"
       },
       "cta": {
-        "eyebrow": "शिवबा प्रतिष्ठान ट्रस्ट",
+        "eyebrow": "शिवबा प्रतिष्ठान ट्रस्ट (रजि)",
         "button": "स्पर्धेत सहभागी व्हा",
         "href": "#register",
         "titleLines": [
@@ -618,7 +618,7 @@ export const content: BilingualContent = {
             "किल्ल्याची चार वेगवेगळ्या कोनांतून घेतलेली छायाचित्रे (फोटो) पाठवावीत.",
             "स्पर्धकांना गुगल फॉर्म भरणे अनिवार्य आहे.",
             "चित्रफिती मध्ये किल्ल्याची माहिती असल्यास प्राधान्य.",
-            "सादर किल्ल्याचा चित्रफीत (video) शिवबा प्रतिष्ठान ट्रस्टच्या इन्स्टाग्राम प्रोफाइल ला कोलॅबरेट करावे.",
+            "सादर किल्ल्याचा चित्रफीत (video) शिवबा प्रतिष्ठान ट्रस्ट (रजि)च्या इन्स्टाग्राम प्रोफाइल ला कोलॅबरेट करावे.",
             "चित्रफीत (video) व छायाचित्र पाठवण्याची अंतिम तारीख: २१ नोव्हेंबर २०२६"
           ]
         },
@@ -706,7 +706,7 @@ export const content: BilingualContent = {
     "messages": {
       "invalidForm": "कृपया नोंदणी पूर्ण करण्यापूर्वी दाखवलेली माहिती दुरुस्त करा.",
       "individualPlaceholder": "उदा. रोहन पाटील",
-      "groupPlaceholder": "उदा. शिवबा प्रतिष्ठान समूह",
+      "groupPlaceholder": "उदा. शिवबा प्रतिष्ठान ट्रस्ट (रजि) समूह",
       "submitting": "नोंदणी पाठवत आहोत…",
       "savedAndGenerating": "नोंदणी जतन झाली. प्रमाणपत्र तयार करत आहोत…",
       "generatingCertificate": "प्रमाणपत्र तयार करत आहोत…",
@@ -844,11 +844,11 @@ export const content: BilingualContent = {
       "header": {
         "logo": {
           "src": "/images/trust-seal.png",
-          "alt": "Shivba Pratishthan Trust logo",
+          "alt": "Shivba Pratishthan Trust (Reg.) logo",
           "width": 52,
           "height": 52
         },
-        "brand": "Shivba Pratishthan Trust",
+        "brand": "Shivba Pratishthan Trust (Reg.)",
         "navLabel": "Main navigation",
         "navigation": [
           {
@@ -876,11 +876,11 @@ export const content: BilingualContent = {
       "footer": {
         "logo": {
           "src": "/images/trust-seal.png",
-          "alt": "Shivba Pratishthan Trust logo",
+          "alt": "Shivba Pratishthan Trust (Reg.) logo",
           "width": 80,
           "height": 80
         },
-        "brand": "Shivba Pratishthan Trust",
+        "brand": "Shivba Pratishthan Trust (Reg.)",
         "description": [
           "An organization committed to social service",
           "Fort Construction Competition 2026"
@@ -896,7 +896,7 @@ export const content: BilingualContent = {
         "address": {
           "label": "Address",
           "lines": [
-            "Shivba Pratishthan Trust Office,",
+            "Shivba Pratishthan Trust (Reg.) Office,",
             "Vighneshwar 2B,",
             "Chhatrapati Sambhaji Maharaj Nagar,",
             "opposite D Mart, Koladongri,",
@@ -909,12 +909,12 @@ export const content: BilingualContent = {
             "label": "Follow us on Instagram"
           }
         },
-        "copyright": "© 2026 Shivba Pratishthan Trust"
+        "copyright": "© 2026 Shivba Pratishthan Trust (Reg.)"
       }
     },
     "sections": {
       "top": {
-        "tagline": "Presented by Shivba Pratishthan Trust",
+        "tagline": "Presented by Shivba Pratishthan Trust (Reg.)",
         "title": "The world’s first international fort-building competition 2026",
         "image": {
           "src": "/images/shivba-wordmark.png",
@@ -942,9 +942,9 @@ export const content: BilingualContent = {
       },
       "about": {
         "eyebrow": "About us",
-        "title": "Shivba Pratishthan Trust",
+        "title": "Shivba Pratishthan Trust (Reg.)",
         "paragraphs": [
-          "Shivba Pratishthan Trust is an organization committed to social work and preserving the legacy of Chhatrapati Shivaji Maharaj’s ideals. [Add the trust’s founding details and work here.]",
+          "Shivba Pratishthan Trust (Reg.) is an organization committed to social work and preserving the legacy of Chhatrapati Shivaji Maharaj’s ideals. [Add the trust’s founding details and work here.]",
           "Through the fort-building competition, we aim to help the next generation experience the history, architecture, and pride of our forts up close."
         ]
       },
@@ -1131,7 +1131,7 @@ export const content: BilingualContent = {
       },
       "gallery": {
         "eyebrow": "Gallery",
-        "title": "Shivba Pratishthan Trust – Photo Gallery",
+        "title": "Shivba Pratishthan Trust (Reg.) – Photo Gallery",
         "subtitle": "A photo collection celebrating social work, activities, and events.",
         "categories": [{"id":"all","label":"All"},{"id":"forts","label":"Forts"},{"id":"social","label":"Social Programs"}],
         "noResults": "No photos are currently available in this category.",
@@ -1146,7 +1146,7 @@ export const content: BilingualContent = {
           },
           {
             "src": "/gallery/shiv-jayanti-greetings.jpg",
-            "alt": "A poster with Shivba Pratishthan Trust’s Shiv Jayanti greetings and felicitation ceremony announcement.",
+            "alt": "A poster with Shivba Pratishthan Trust (Reg.)’s Shiv Jayanti greetings and felicitation ceremony announcement.",
             "category": "social"
           },
           {
@@ -1201,27 +1201,27 @@ export const content: BilingualContent = {
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-05.jpg",
-            "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
+            "alt": "Shivba Pratishthan Trust (Reg.) distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-04.jpg",
-            "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
+            "alt": "Shivba Pratishthan Trust (Reg.) distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-03.jpg",
-            "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
+            "alt": "Shivba Pratishthan Trust (Reg.) distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-02.jpg",
-            "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
+            "alt": "Shivba Pratishthan Trust (Reg.) distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
             "src": "/gallery/volleyball-shirt-distribution-01.jpg",
-            "alt": "Shivba Pratishthan Trust distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
+            "alt": "Shivba Pratishthan Trust (Reg.) distributing T-shirts to the Chhatrapati Sambhaji Maharaj Nagar volleyball team.",
             "category": "social"
           },
           {
@@ -1415,7 +1415,7 @@ export const content: BilingualContent = {
         "title": "Frequently asked questions"
       },
       "cta": {
-        "eyebrow": "Shivba Pratishthan Trust",
+        "eyebrow": "Shivba Pratishthan Trust (Reg.)",
         "button": "Join the competition",
         "href": "#register",
         "titleLines": [
@@ -1435,7 +1435,7 @@ export const content: BilingualContent = {
             "Submit four photographs of the fort, each taken from a different angle.",
             "Participants must fill out the Google Form.",
             "Preference will be given to videos that include information about the fort.",
-            "The submitted fort video should be posted as a collaboration with Shivba Pratishthan Trust’s Instagram profile.",
+            "The submitted fort video should be posted as a collaboration with Shivba Pratishthan Trust (Reg.)’s Instagram profile.",
             "The deadline to submit the video and photographs is 21 November 2026."
           ]
         },
