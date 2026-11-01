@@ -22,6 +22,7 @@ const FORM_KEYS = {
   stateCode: "stateProvince",
   city: "city",
   cityId: "city",
+  areaLocality: "areaLocality",
   postalCode: "postalCode",
 };
 const FORM_NAMES = {
@@ -41,6 +42,7 @@ const FORM_NAMES = {
   stateCode: "stateCode",
   city: "city",
   cityId: "cityId",
+  areaLocality: "areaLocality",
   postalCode: "postalCode",
 };
 
@@ -54,6 +56,7 @@ function getFormValues(form) {
     stateCode: data.get("stateCode") || "",
     city: data.get("city") || "",
     cityId: data.get("cityId") || "",
+    areaLocality: data.get("areaLocality") || "",
     stateRequired: data.get("stateRequired") || "",
     cityRequired: data.get("cityRequired") || "",
     postalCode: data.get("postalCode") || "",
