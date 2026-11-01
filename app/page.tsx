@@ -16,10 +16,10 @@ export default function Home() {
       <HeroSection />
       <AboutSection />
       <JoinSection />
+      <RulesSection />
       <RegistrationSection />
       <GallerySection />
       <WinnersSection />
-      <RulesSection />
       <FAQSection />
       <CTASection />
       <Footer />

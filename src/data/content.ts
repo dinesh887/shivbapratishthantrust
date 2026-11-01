@@ -994,10 +994,6 @@ export const content: BilingualContent = {
             "value": "Last date: 21 November 2026"
           },
           {
-            "label": "Location",
-            "value": "[Location]"
-          },
-          {
             "label": "Fee",
             "value": "Free of cost"
           }
@@ -1202,11 +1198,7 @@ export const content: BilingualContent = {
         "closePreview": "Close image preview",
         "previousImage": "Previous image",
         "nextImage": "Next image",
-        "items": [          {
-            "src": "/gallery/%E0%A4%B6%E0%A4%BF%E0%A4%B5%E0%A4%B0%E0%A4%BE%E0%A4%AF%20%E0%A4%85%E0%A4%B8%E0%A5%87%20%E0%A4%B6%E0%A4%95%E0%A5%8D%E0%A4%A4%E0%A4%BF%E0%A4%A6%E0%A4%BE%E0%A4%A4%E0%A4%BE....%20(2).jpg",
-            "alt": "A stage performance at a Shiv Jayanti event.",
-            "category": "social"
-          },
+        "items": [
           {
             "src": "/gallery/shiv-jayanti-greetings.jpg",
             "alt": "A poster with Shivba Pratishthan Trust (Reg.)’s Shiv Jayanti greetings and felicitation ceremony announcement.",

@@ -22,7 +22,7 @@ export default function Footer({ className }: FooterProps) {
   const lines = (values: string[]) => values.map((line, index) => <span key={`${index}-${line}`}>{index > 0 && <br />}{line}</span>);
   const markup = (
     <footer style={{ background: "#3F0208", color: "#FBF3E4", padding: "48px 0" }}>
-      <div className="w grid three" style={{ gridTemplateColumns: "2fr 1fr 1fr" }}>
+      <div className="w grid three" style={{ gridTemplateColumns: "1.7fr 1fr 1.4fr" }}>
         <div style={{ display: "flex", gap: 16, alignItems: "center" }}>
           <Image src={footer.logo.src} alt={footer.logo.alt} width={footer.logo.width} height={footer.logo.height} style={{ width: footer.logo.width, height: footer.logo.height, objectFit: "contain" }} />
           <div>
@@ -45,7 +45,7 @@ export default function Footer({ className }: FooterProps) {
           <b style={{ color: "#FFD21F" }}>{footer.address.label}</b>
           <div style={{ display: "flex", alignItems: "flex-start", gap: 9, marginTop: 8, lineHeight: 1.7 }}>
             <span style={{ marginTop: 4 }}><ContactIcon name="location" /></span>
-            <p style={{ margin: 0 }}>{lines(footer.address.lines)}</p>
+            <p className="footer-address-copy" style={{ margin: 0 }}>{lines(footer.address.lines)}</p>
           </div>
         </div>
       </div>

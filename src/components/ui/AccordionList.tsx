@@ -11,10 +11,10 @@ function RuleIcon({ index }: { index: number }) {
   return <span className="ic"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">{icons[index % icons.length]}</svg></span>;
 }
 
-export default function AccordionList({ group, items }: { group: "rules" | "faq"; items: AccordionContent[] }) {
-  return <>{items.map((item, index) => <details key={item.question} data-accordion-group={group} data-accordion-index={index} open={index === 0}>
+export default function AccordionList({ group, items, startIndex = 0 }: { group: "rules" | "faq"; items: AccordionContent[]; startIndex?: number }) {
+  return <>{items.map((item, itemIndex) => { const index = startIndex + itemIndex; return <details key={item.question} data-accordion-group={group} data-accordion-index={index} open={index === 0}>
     <summary>{group === "rules" && <RuleIcon index={index} />}{item.question}</summary>
     <div className={group === "rules" ? "ab" : "fa"}>{item.answers.length > 1 ? <ol>{item.answers.map(answer => <li key={answer}>{answer}</li>)}</ol> : item.answers.map(answer => <p key={answer}>{answer}</p>)}</div>
-  </details>)}</>;
+  </details>; })}</>;
 }
 

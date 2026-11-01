@@ -6,6 +6,8 @@ import { validateRegistration } from "../../../lib/registration-validation.js";
 import { useLanguage, useLanguageContent } from "@/src/components/layout/LanguageProvider";
 
 const FORM_KEYS = {
+  country: "country",
+  countryIso: "country",
   rt: "registrationType",
   name: "name",
   district: "district",
@@ -16,8 +18,15 @@ const FORM_KEYS = {
   ft: "fortType",
   driveFolderUrl: "driveFolderUrl",
   consent: "consent",
+  stateProvince: "stateProvince",
+  stateCode: "stateProvince",
+  city: "city",
+  cityId: "city",
+  postalCode: "postalCode",
 };
 const FORM_NAMES = {
+  country: "country",
+  countryIso: "countryIso",
   registrationType: "rt",
   name: "name",
   district: "district",
@@ -28,11 +37,26 @@ const FORM_NAMES = {
   fortType: "ft",
   driveFolderUrl: "driveFolderUrl",
   consent: "consent",
+  stateProvince: "stateProvince",
+  stateCode: "stateCode",
+  city: "city",
+  cityId: "cityId",
+  postalCode: "postalCode",
 };
 
 function getFormValues(form) {
   const data = new FormData(form);
   return {
+    country: data.get("country") || "",
+    countryIso: data.get("countryIso") || "IN",
+    callingCode: data.get("callingCode") || "",
+    stateProvince: data.get("stateProvince") || "",
+    stateCode: data.get("stateCode") || "",
+    city: data.get("city") || "",
+    cityId: data.get("cityId") || "",
+    stateRequired: data.get("stateRequired") || "",
+    cityRequired: data.get("cityRequired") || "",
+    postalCode: data.get("postalCode") || "",
     registrationType: data.get("rt") || "",
     name: data.get("name") || "",
     district: data.get("district") || "",
@@ -88,7 +112,7 @@ export default function SiteInteractions({ children }) {
   const [formErrors, setFormErrors] = useState({});
   const [submission, setSubmission] = useState({ status: "idle", message: "" });
   const [registrationType, setRegistrationType] = useState("individual");
-  const [certificate, setCertificate] = useState({ open: false, status: "idle", name: "", token: "", url: "", message: "" });
+  const [certificate, setCertificate] = useState({ open: false, status: "idle", name: "", token: "", details: null, url: "", message: "" });
   const certificateGenerating = useRef(false);
   const certificateUrl = useRef("");
   const certificateBlob = useRef(null);
@@ -139,11 +163,12 @@ export default function SiteInteractions({ children }) {
         else input.removeAttribute("aria-invalid");
       });
     });
-    const districtControl = container.querySelector("#rd-control");
-    if (districtControl) {
-      if (formErrors.district) districtControl.setAttribute("aria-invalid", "true");
-      else districtControl.removeAttribute("aria-invalid");
-    }
+    [["country", "#country-control"], ["stateProvince", "#state-control"], ["city", "#city-control"]].forEach(([key, selector]) => {
+      const control = container.querySelector(selector);
+      if (!control) return;
+      if (formErrors[key]) control.setAttribute("aria-invalid", "true");
+      else control.removeAttribute("aria-invalid");
+    });
 
     const status = container.querySelector("#registration-status");
     if (status) {
@@ -193,18 +218,18 @@ export default function SiteInteractions({ children }) {
     return () => document.removeEventListener("keydown", closeOnEscape);
   }, [certificate.open, closeCertificate]);
 
-  async function generateCertificate(name, token) {
+  async function generateCertificate(name, token, details = null) {
     if (certificateGenerating.current) return false;
     const requestId = certificateRequestId.current + 1;
     certificateRequestId.current = requestId;
     certificateGenerating.current = true;
     setSubmission({ status: "submitting", message: content.messages.savedAndGenerating });
-    setCertificate({ open: false, status: "loading", name, token, url: "", message: content.messages.generatingCertificate });
+    setCertificate({ open: false, status: "loading", name, token, details, url: "", message: content.messages.generatingCertificate });
     try {
       const response = await fetch("/api/certificate", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ name, certificateToken: token, language }),
+        body: JSON.stringify({ name, certificateToken: token, language, details }),
       });
       if (!response.ok) {
         const result = await response.json().catch(() => ({}));
@@ -218,12 +243,12 @@ export default function SiteInteractions({ children }) {
       if (certificateUrl.current) URL.revokeObjectURL(certificateUrl.current);
       certificateBlob.current = pdfBlob;
       certificateUrl.current = URL.createObjectURL(pdfBlob);
-      setCertificate({ open: true, status: "ready", name, token, url: certificateUrl.current, message: "" });
+      setCertificate({ open: true, status: "ready", name, token, details, url: certificateUrl.current, message: "" });
       setSubmission({ status: "success", message: content.messages.saved });
       return true;
     } catch (error) {
       if (certificateRequestId.current !== requestId) return;
-      setCertificate({ open: false, status: "error", name, token, url: "", message: error.message || content.messages.certificateFailed });
+      setCertificate({ open: false, status: "error", name, token, details, url: "", message: error.message || content.messages.certificateFailed });
       setSubmission({ status: "error", message: content.messages.savedCertificateFailed });
       return false;
     } finally {
@@ -300,14 +325,13 @@ export default function SiteInteractions({ children }) {
     if (!form || !fieldName) return;
     if (event.target.name === "rt") setRegistrationType(event.target.value);
 
-    if (event.target.name === "mobile" || event.target.name === "alternateMobile") {
-      const digitsOnly = event.target.value.replace(/\D/g, "").slice(0, 10);
-      if (event.target.value !== digitsOnly) event.target.value = digitsOnly;
-    }
-
     const { errors } = validateRegistration(getFormValues(form), language);
     if (Object.keys(errors).length === 0 && submission.message === invalidFormMessage) {
       setSubmission({ status: "idle", message: "" });
+    }
+    if (["country", "countryIso", "mobile", "alternateMobile", "stateCode", "cityId"].includes(event.target.name)) {
+      setFormErrors(errors);
+      return;
     }
     setFormErrors((current) => {
       const next = { ...current };
@@ -328,8 +352,8 @@ export default function SiteInteractions({ children }) {
     if (!valid) {
       setSubmission({ status: "error", message: invalidFormMessage });
       const firstInvalidField = Object.keys(errors)[0];
-      const firstInvalidControl = firstInvalidField === "district"
-        ? form.querySelector("#rd-control")
+      const firstInvalidControl = ({ country: "#country-control", stateProvince: "#state-control", city: "#city-control" }[firstInvalidField])
+        ? form.querySelector(({ country: "#country-control", stateProvince: "#state-control", city: "#city-control" }[firstInvalidField]))
         : form.querySelector(`[name="${FORM_NAMES[firstInvalidField] || firstInvalidField}"]`);
       firstInvalidControl?.focus();
       return;
@@ -352,9 +376,15 @@ export default function SiteInteractions({ children }) {
       }
 
       form.reset();
-      setRegistrationType("individual");
       setFormErrors({});
-      await generateCertificate(values.name, result.certificateToken);
+      const certificateDetails = values.countryIso !== "IN" ? {
+        country: values.country,
+        countryIso: values.countryIso,
+        stateProvince: values.stateProvince,
+        city: values.city,
+        postalCode: values.postalCode,
+      } : null;
+      await generateCertificate(values.name, result.certificateToken, certificateDetails);
     } catch {
       setSubmission({ status: "error", message: content.messages.serviceUnavailable });
     } finally {
@@ -374,7 +404,7 @@ export default function SiteInteractions({ children }) {
       {certificate.status === "error" && !certificate.open && (
         <div className="certificate-retry-banner" role="alert">
           <span>{certificate.message}</span>
-          <button type="button" className="certificate-retry" onClick={() => generateCertificate(certificate.name, certificate.token)}>{content.messages.retry}</button>
+          <button type="button" className="certificate-retry" onClick={() => generateCertificate(certificate.name, certificate.token, certificate.details)}>{content.messages.retry}</button>
         </div>
       )}
       {certificate.open && (
@@ -395,6 +425,7 @@ export default function SiteInteractions({ children }) {
               <div className="certificate-details">
                 <p className="certificate-detail-label">{content.messages.certificateFor}</p>
                 <p className="certificate-participant">{certificate.name}</p>
+                {certificate.details && <p className="certificate-location">{[certificate.details.country, [certificate.details.city, certificate.details.stateProvince].filter(Boolean).join(", "), certificate.details.postalCode].filter(Boolean).join(" · ")}</p>}
                 {certificate.status === "ready" && (
                   <div className="certificate-actions">
                     <button className="certificate-preview-action" type="button" onClick={openCertificatePreview}>{content.messages.previewAction} <span aria-hidden="true">↗</span></button>

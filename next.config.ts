@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   },
   cacheComponents: true,
   partialPrefetching: true,
+  outputFileTracingIncludes: {
+    "/api/locations": ["./node_modules/@countrystatecity/countries/dist/data/**/*"],
+  },
   turbopack: {
     rules: {
       "*.css": {

@@ -4,6 +4,7 @@ import path from "node:path";
 import { PDFDocument } from "pdf-lib";
 import fontkit from "@pdf-lib/fontkit";
 import sharp from "sharp";
+import { getCountries } from "libphonenumber-js";
 import { verifyCertificateToken } from "../../../lib/certificate-token.js";
 import { content } from "../../../src/data/content";
 
@@ -15,6 +16,7 @@ const FONT_MIN_SIZE = 15;
 const RASTER_SCALE = 4;
 const DEVANAGARI_RUN = /[\p{Script=Devanagari}\p{M}]+|[^\p{Script=Devanagari}\p{M}]+/gu;
 const CERTIFICATE_NAME_COLOR = "#7a030f";
+const CERTIFICATE_LOCATION_COLOR = "#4a3426";
 
 function json(body, status = 200) {
   return Response.json(body, { status });
@@ -68,11 +70,24 @@ export async function POST(request) {
   const messages = content[body?.language === "en" ? "en" : "mr"].messages;
 
   const name = typeof body?.name === "string" ? body.name.trim().replace(/\s+/g, " ") : "";
-  if (name.length < 2 || name.length > MAX_NAME_LENGTH || !/^\p{L}[\p{L}\p{M}]*(?: [\p{L}][\p{L}\p{M}]*)*$/u.test(name)) {
+  if (name.length < 2 || name.length > MAX_NAME_LENGTH || !/^\p{L}[\p{L}\p{M}]*(?:['’\-][\p{L}\p{M}]+)*(?: \p{L}[\p{L}\p{M}]*(?:['’\-][\p{L}\p{M}]+)*)*$/u.test(name)) {
     return json({ success: false, message: messages.apiCertificateInvalidName }, 400);
   }
+  let details = null;
+  if (body?.details && typeof body.details === "object" && !Array.isArray(body.details)) {
+    details = {
+      country: typeof body.details.country === "string" ? body.details.country.trim() : "",
+      countryIso: typeof body.details.countryIso === "string" ? body.details.countryIso.trim().toUpperCase() : "",
+      stateProvince: typeof body.details.stateProvince === "string" ? body.details.stateProvince.trim() : "",
+      city: typeof body.details.city === "string" ? body.details.city.trim() : "",
+      postalCode: typeof body.details.postalCode === "string" ? body.details.postalCode.trim() : "",
+    };
+    if (!details.country || !getCountries().includes(details.countryIso) || [details.country, details.stateProvince, details.city, details.postalCode].some((value) => value.length > 100)) {
+      return json({ success: false, message: messages.apiCertificateInvalidRequest }, 400);
+    }
+  }
   const sharedSecret = process.env.google_apps_script_shared_secret || process.env.GOOGLE_APPS_SCRIPT_SHARED_SECRET;
-  if (!sharedSecret || !verifyCertificateToken(name, body?.certificateToken, sharedSecret)) {
+  if (!sharedSecret || !verifyCertificateToken(name, body?.certificateToken, sharedSecret, details)) {
     return json({ success: false, message: messages.apiCertificateConfirmation }, 403);
   }
 
@@ -110,6 +125,29 @@ export async function POST(request) {
       width: imageWidth,
       height: imageHeight,
     });
+
+    if (details) {
+      const location = [details.country, [details.city, details.stateProvince].filter(Boolean).join(", "), details.postalCode].filter(Boolean).join(" · ");
+      const locationRuns = location.match(DEVANAGARI_RUN) || [location];
+      let locationSize = 12;
+      let locationLayout = layoutName(locationRuns, devanagariFont, latinFont, locationSize);
+      while (locationLayout.width > MAX_NAME_WIDTH && locationSize > 8) {
+        locationSize -= 1;
+        locationLayout = layoutName(locationRuns, devanagariFont, latinFont, locationSize);
+      }
+      if (locationLayout.width > MAX_NAME_WIDTH) return json({ success: false, message: messages.apiCertificateNameTooLong }, 400);
+      const locationSvg = shapedNameSvg(locationLayout).replace(CERTIFICATE_NAME_COLOR, CERTIFICATE_LOCATION_COLOR);
+      const locationBytes = await sharp(Buffer.from(locationSvg)).png().toBuffer();
+      const locationImage = await pdf.embedPng(locationBytes);
+      const locationWidth = locationImage.width / RASTER_SCALE;
+      const locationHeight = locationImage.height / RASTER_SCALE;
+      page.drawImage(locationImage, {
+        x: (page.getWidth() - locationWidth) / 2,
+        y: NAME_BASELINE_Y - 20 - locationHeight,
+        width: locationWidth,
+        height: locationHeight,
+      });
+    }
 
     const bytes = await pdf.save();
     return new Response(bytes, {
