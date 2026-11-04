@@ -36,6 +36,17 @@ function normalizeName(value) {
   return String(value || "").trim().replace(/\s+/g, " ").toLocaleLowerCase();
 }
 
+function normalizeEmail(value) {
+  return String(value || "").trim().toLocaleLowerCase();
+}
+
+function normalizePhone(value, callingCode) {
+  const digits = String(value || "").replace(/\D/g, "");
+  if (!digits) return "";
+  const code = String(callingCode || "").replace(/\D/g, "");
+  return code && !digits.startsWith(code) ? code + digits : digits;
+}
+
 function boldSheetHeaders(sheet) {
   const headerWidth = sheet.getLastColumn();
   if (headerWidth > 0) {
@@ -205,11 +216,22 @@ function doPost(event) {
     if (lastRow > 1) {
       const submittedName = normalizeName(data.name);
       const nameColumn = headers.indexOf("Participant / Group Name");
+      const emailColumn = headers.indexOf("Email");
+      const mobileColumn = headers.indexOf("Mobile Number");
+      const legacyMobileColumn = headers.indexOf("Mobile");
+      const countryCodeColumn = headers.indexOf("Country Code");
       const duplicate = existingRows.some(function (row) {
-        return nameColumn !== -1 && normalizeName(row[nameColumn]) === submittedName;
+        const sameName = nameColumn !== -1 && normalizeName(row[nameColumn]) === submittedName;
+        const sameEmail = emailColumn !== -1 && normalizeEmail(row[emailColumn]) === normalizeEmail(data.email);
+        const storedMobile = mobileColumn !== -1 && row[mobileColumn]
+          ? row[mobileColumn]
+          : legacyMobileColumn !== -1 ? row[legacyMobileColumn] : "";
+        const storedCallingCode = countryCodeColumn !== -1 ? row[countryCodeColumn] : "";
+        const sameMobile = normalizePhone(storedMobile, storedCallingCode) === normalizePhone(data.mobile, "");
+        return sameName || sameEmail || sameMobile;
       });
       if (duplicate) {
-        return output({ success: false, duplicate: true, message: "This participant or group name is already registered." });
+        return output({ success: false, duplicate: true, message: "This name, email address, or mobile number is already registered." });
       }
     }
 

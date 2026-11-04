@@ -1674,7 +1674,7 @@ export const content: BilingualContent = {
       "apiRegistrationUnconfigured": "The registration service is not configured yet. Please try again later.",
       "apiAppsScriptConfig": "Check the Google Apps Script URL configuration.",
       "apiUnreadableSheets": "Could not read a valid response from Google Sheets.",
-      "apiDuplicateRegistration": "This person or group is already registered. Only one registration is allowed per person or group.",
+      "apiDuplicateRegistration": "This name, email address, or mobile number is already registered. Each can be used only once.",
       "apiSheetsSaveFailed": "The information could not be saved to Google Sheets. Please try again.",
       "apiRegistrationSaved": "Registration saved successfully.",
       "apiCertificateConfirmation": "A successful registration must be confirmed before a certificate can be generated.",
