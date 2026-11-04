@@ -74,7 +74,7 @@ International certificates add the participant's country and any provided city, 
 
 ## Duplicate registrations
 
-Apps Script rejects a registration when its normalized participant/group name, email address, or mobile number matches an existing row. Email comparison ignores capitalization and surrounding whitespace; mobile comparison uses the stored country code and normalized digits. The check runs while holding a script lock so simultaneous requests cannot create duplicates. Existing duplicate rows are not deleted; remove any old duplicates manually if you want the sheet cleaned up. After editing `Code.gs`, update/redeploy the Apps Script Web App version for the rule to take effect.
+Apps Script stores Individual and Group registrations in the same registration sheet and rejects a future submission if its email address or mobile number matches any existing row, regardless of registration type, name, fort, or Drive link. Email comparison trims whitespace and ignores capitalization. Mobile comparison uses E.164 digits for current rows and the saved calling code for legacy rows, so formatting differences do not bypass the check and different international numbers remain distinct. The check runs under the script lock before registration-number assignment and row append, so simultaneous submissions are serialized. Existing rows are left intact. After editing `Code.gs`, update/redeploy the Apps Script Web App version for the rule to take effect.
 
 ## Registration numbers
 

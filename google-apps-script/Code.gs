@@ -32,10 +32,6 @@ function output(result) {
     .setMimeType(ContentService.MimeType.JSON);
 }
 
-function normalizeName(value) {
-  return String(value || "").trim().replace(/\s+/g, " ").toLocaleLowerCase();
-}
-
 function normalizeEmail(value) {
   return String(value || "").trim().toLocaleLowerCase();
 }
@@ -45,6 +41,26 @@ function normalizePhone(value, callingCode) {
   if (!digits) return "";
   const code = String(callingCode || "").replace(/\D/g, "");
   return code && !digits.startsWith(code) ? code + digits : digits;
+}
+
+function findRegistrationDuplicates(existingRows, headers, data) {
+  const emailColumn = headers.indexOf("Email");
+  const mobileColumn = headers.indexOf("Mobile Number");
+  const legacyMobileColumn = headers.indexOf("Mobile");
+  const countryCodeColumn = headers.indexOf("Country Code");
+  const submittedEmail = normalizeEmail(data.email);
+  const submittedMobile = normalizePhone(data.mobile, "");
+
+  return existingRows.reduce(function (duplicates, row) {
+    if (emailColumn !== -1 && normalizeEmail(row[emailColumn]) === submittedEmail) duplicates.email = true;
+    const canonicalMobile = mobileColumn !== -1 ? row[mobileColumn] : "";
+    const legacyMobile = legacyMobileColumn !== -1 ? row[legacyMobileColumn] : "";
+    const storedMobile = canonicalMobile
+      ? normalizePhone(canonicalMobile, "")
+      : normalizePhone(legacyMobile, countryCodeColumn !== -1 ? row[countryCodeColumn] : "");
+    if (storedMobile && submittedMobile && storedMobile === submittedMobile) duplicates.mobile = true;
+    return duplicates;
+  }, { email: false, mobile: false });
 }
 
 function boldSheetHeaders(sheet) {
@@ -214,24 +230,9 @@ function doPost(event) {
       ? sheet.getRange(2, 1, lastRow - 1, Math.max(sheet.getLastColumn(), registrationColumn)).getValues()
       : [];
     if (lastRow > 1) {
-      const submittedName = normalizeName(data.name);
-      const nameColumn = headers.indexOf("Participant / Group Name");
-      const emailColumn = headers.indexOf("Email");
-      const mobileColumn = headers.indexOf("Mobile Number");
-      const legacyMobileColumn = headers.indexOf("Mobile");
-      const countryCodeColumn = headers.indexOf("Country Code");
-      const duplicate = existingRows.some(function (row) {
-        const sameName = nameColumn !== -1 && normalizeName(row[nameColumn]) === submittedName;
-        const sameEmail = emailColumn !== -1 && normalizeEmail(row[emailColumn]) === normalizeEmail(data.email);
-        const storedMobile = mobileColumn !== -1 && row[mobileColumn]
-          ? row[mobileColumn]
-          : legacyMobileColumn !== -1 ? row[legacyMobileColumn] : "";
-        const storedCallingCode = countryCodeColumn !== -1 ? row[countryCodeColumn] : "";
-        const sameMobile = normalizePhone(storedMobile, storedCallingCode) === normalizePhone(data.mobile, "");
-        return sameName || sameEmail || sameMobile;
-      });
-      if (duplicate) {
-        return output({ success: false, duplicate: true, message: "This name, email address, or mobile number is already registered." });
+      const duplicates = findRegistrationDuplicates(existingRows, headers, data);
+      if (duplicates.email || duplicates.mobile) {
+        return output({ success: false, duplicate: true, duplicateEmail: duplicates.email, duplicateMobile: duplicates.mobile });
       }
     }
 

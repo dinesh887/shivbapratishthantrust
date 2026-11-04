@@ -99,10 +99,23 @@ export async function POST(request) {
     }
 
     if (result?.duplicate === true) {
+      const duplicateEmail = result.duplicateEmail === true;
+      const duplicateMobile = result.duplicateMobile === true;
+      const duplicateMessage = duplicateEmail && duplicateMobile
+        ? messages.apiDuplicateEmailAndMobile
+        : duplicateEmail
+          ? messages.apiDuplicateEmail
+          : duplicateMobile
+            ? messages.apiDuplicateMobile
+            : messages.apiDuplicateRegistration;
+      const errors = {};
+      if (duplicateEmail) errors.email = messages.apiDuplicateEmail;
+      if (duplicateMobile) errors.mobile = messages.apiDuplicateMobile;
       return json({
         success: false,
         duplicate: true,
-        message: messages.apiDuplicateRegistration,
+        errors,
+        message: duplicateMessage,
       }, 409);
     }
 
