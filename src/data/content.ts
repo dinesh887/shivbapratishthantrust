@@ -116,7 +116,7 @@ export const content: BilingualContent = {
         "details": [
           {
             "label": "अंतिम तारीख",
-            "value": "२१ नोव्हेंबर २०२६"
+            "value": "३० नोव्हेंबर २०२६"
           },
           {
             "label": "शुल्क",
@@ -162,7 +162,7 @@ export const content: BilingualContent = {
             "number": "४",
             "label": "पायरी ४",
             "title": "फोटो सादर करा",
-            "description": "पूर्ण झालेल्या गडाचे फोटो २१ नोव्हेंबर २०२६ पर्यंत आमच्याकडे पाठवा.",
+            "description": "पूर्ण झालेल्या गडाचे फोटो ३० नोव्हेंबर २०२६ पर्यंत आमच्याकडे पाठवा.",
             "icon": "photo"
           }
         ],
@@ -680,7 +680,7 @@ export const content: BilingualContent = {
             "किल्ल्याची चार वेगवेगळ्या कोनांतून घेतलेली छायाचित्रे (फोटो) पाठवावीत.",
             "चित्रफिती मध्ये किल्ल्याची माहिती असल्यास प्राधान्य.",
             "सादर किल्ल्याचा चित्रफीत (video) शिवबा प्रतिष्ठान ट्रस्ट (रजि)च्या इन्स्टाग्राम प्रोफाइल ला कोलॅबरेट करावे.",
-            "चित्रफीत (video) व छायाचित्र पाठवण्याची अंतिम तारीख: २१ नोव्हेंबर २०२६"
+            "चित्रफीत (video) व छायाचित्र पाठवण्याची अंतिम तारीख: ३० नोव्हेंबर २०२६"
           ]
         },
         {
@@ -701,7 +701,7 @@ export const content: BilingualContent = {
         {
           "question": "फोटो / व्हिडिओ सबमिशन",
           "answers": [
-            "किल्ल्याची चार वेगवेगळ्या कोनांतून घेतलेली छायाचित्रे आणि 1 GB पेक्षा मोठा नसलेला एक व्हिडिओ २१ नोव्हेंबर २०२६ पर्यंत सादर करणे आवश्यक आहे.",
+            "किल्ल्याची चार वेगवेगळ्या कोनांतून घेतलेली छायाचित्रे आणि 1 GB पेक्षा मोठा नसलेला एक व्हिडिओ ३० नोव्हेंबर २०२६ पर्यंत सादर करणे आवश्यक आहे.",
             "व्हिडिओचा कालावधी जास्तीत जास्त 2 मिनिटे असावा. फोटो व व्हिडिओ एकाच Google Drive फोल्डरमध्ये ठेवावेत.",
             "फोल्डरची परवानगी 'Anyone with the link can view' अशी ठेवावी."
           ]
@@ -993,7 +993,7 @@ export const content: BilingualContent = {
         "details": [
           {
             "label": "Date",
-            "value": "Last date: 21 November 2026"
+            "value": "Last date: 30 November 2026"
           },
           {
             "label": "Fee",
@@ -1039,7 +1039,7 @@ export const content: BilingualContent = {
             "number": "4",
             "label": "Step 4",
             "title": "Submit photos",
-            "description": "Send us photos of your completed fort by 21 November 2026.",
+            "description": "Send us photos of your completed fort by 30 November 2026.",
             "icon": "photo"
           }
         ],
@@ -1558,7 +1558,7 @@ export const content: BilingualContent = {
             "Participants must fill out the Google Form.",
             "Preference will be given to videos that include information about the fort.",
             "The submitted fort video should be posted as a collaboration with Shivba Pratishthan Trust (Reg.)’s Instagram profile.",
-            "The deadline to submit the video and photographs is 21 November 2026."
+            "The deadline to submit the video and photographs is 30 November 2026."
           ]
         },
         {
@@ -1579,7 +1579,7 @@ export const content: BilingualContent = {
         {
           "question": "Photo / video submission",
           "answers": [
-            "Submit four photographs of the fort, each taken from a different angle, and one video no larger than 1 GB by 21 November 2026.",
+            "Submit four photographs of the fort, each taken from a different angle, and one video no larger than 1 GB by 30 November 2026.",
             "The video must be no longer than 2 minutes. Keep the photos and video in one Google Drive folder.",
             "Set the folder access to “Anyone with the link can view.”"
           ]
